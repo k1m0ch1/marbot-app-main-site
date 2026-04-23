@@ -1,0 +1,39 @@
+{
+  "badge": "FAQ",
+  "title": "Pertanyaan yang Sering Diajukan",
+  "subtitle": "Jawaban untuk pertanyaan umum tentang marbot.app.",
+  "items": {
+    "what": {
+      "q": "Apa itu marbot.app?",
+      "a": "marbot.app adalah sistem manajemen masjid gratis yang membantu pengurus masjid (marbot/DKM) mengelola jamaah, keuangan, ZISWAF, dan kegiatan masjid secara digital. Nama \"marbot\" diambil dari istilah Indonesia untuk pengurus masjid."
+    },
+    "free": {
+      "q": "Apakah benar-benar gratis?",
+      "a": "Ya, fitur inti sepenuhnya gratis dan akan selalu gratis. Kami hanya mengenakan biaya untuk fitur tambahan yang membutuhkan resource lebih besar seperti storage tambahan, broadcast WhatsApp lebih banyak, dan custom domain."
+    },
+    "security": {
+      "q": "Apakah data masjid saya aman?",
+      "a": "Setiap masjid memiliki database terpisah — data Anda tidak pernah bercampur dengan masjid lain. Kami menggunakan enkripsi, backup harian, dan tidak pernah menjual data pengguna."
+    },
+    "offline": {
+      "q": "Apakah bisa digunakan tanpa internet?",
+      "a": "Aplikasi web membutuhkan koneksi internet. Namun, kami merancang aplikasi agar ringan dan bisa digunakan dengan koneksi yang lambat. Versi mobile (segera hadir) akan mendukung mode offline."
+    },
+    "who": {
+      "q": "Siapa yang bisa mendaftar?",
+      "a": "Siapa saja yang merupakan pengurus masjid — ketua DKM, bendahara, sekretaris, atau marbot. Anda hanya perlu email Google untuk mendaftar."
+    },
+    "import": {
+      "q": "Apakah bisa import data yang sudah ada?",
+      "a": "Ya, Anda bisa import data jamaah dan keuangan dari CSV. Panduan import akan tersedia di dokumentasi."
+    },
+    "psak": {
+      "q": "Apakah sesuai PSAK 109?",
+      "a": "Ya, modul keuangan kami sudah mengikuti klasifikasi dana sesuai PSAK 109 (Dana Zakat, Dana Infak/Sedekah, Dana Amil, Dana Wakaf, Dana Non-Halal). Laporan keuangan bisa dicetak dalam format PDF."
+    },
+    "multiple": {
+      "q": "Berapa banyak masjid yang bisa saya kelola?",
+      "a": "Satu akun bisa menjadi pengurus di beberapa masjid. Anda bisa berpindah antar masjid dengan mudah melalui menu switcher."
+    }
+  }
+}

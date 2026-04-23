@@ -1,0 +1,141 @@
+{
+  "badge": "Fitur Lengkap",
+  "title": "Fitur Lengkap untuk Pengurus Masjid",
+  "subtitle": "Semua modul yang dibutuhkan untuk mengelola masjid secara profesional — tanpa biaya.",
+  "ctaTitle": "Semua fitur, gratis.",
+  "ctaSubtitle": "Tidak ada versi trial. Tidak ada fitur terkunci. Semua modul tersedia untuk setiap masjid.",
+  "modules": {
+    "dashboard": {
+      "emoji": "📊",
+      "title": "Dashboard",
+      "desc": "Ringkasan keuangan, jumlah jamaah aktif, kegiatan terbaru, dan transaksi terkini — semua dalam satu layar.",
+      "details": [
+        "Ringkasan keuangan real-time",
+        "Statistik jamaah",
+        "Kegiatan mendatang",
+        "Transaksi terbaru"
+      ]
+    },
+    "congregation": {
+      "emoji": "👥",
+      "title": "Manajemen Jamaah",
+      "desc": "Data lengkap jamaah dengan alamat (RT/RW, kelurahan, kecamatan), keluarga, peran, keahlian, dan status ekonomi.",
+      "details": [
+        "8 peran: jamaah, pengurus, imam, muadzin, marbot, bendahara, ketua, ustadz",
+        "Data keluarga terintegrasi",
+        "Tag kustom dengan warna",
+        "Rekening bank per jamaah"
+      ]
+    },
+    "finance": {
+      "emoji": "💰",
+      "title": "Keuangan",
+      "desc": "Pencatatan transaksi masuk/keluar, anggaran bulanan/tahunan, workflow persetujuan, dan upload bukti.",
+      "details": [
+        "Single-entry & double-entry",
+        "Approval workflow",
+        "Upload bukti transaksi",
+        "Anggaran per bulan/tahun"
+      ]
+    },
+    "ziswaf": {
+      "emoji": "💚",
+      "title": "ZISWAF & Zakat",
+      "desc": "Zakat Mal, Zakat Profesi, Infaq, Shadaqah, Wakaf Tunai, Wakaf Aset — dengan verifikasi dan laporan sesuai PSAK 109.",
+      "details": [
+        "6 jenis ZISWAF",
+        "Klasifikasi dana PSAK 109",
+        "Verifikasi donasi",
+        "Laporan otomatis"
+      ]
+    },
+    "zakatFitrah": {
+      "emoji": "🤲",
+      "title": "Zakat Fitrah",
+      "desc": "Pencatatan zakat fitrah per jamaah per tahun — jumlah jiwa, beras atau uang, status bayar.",
+      "details": [
+        "Per jamaah per tahun",
+        "Beras atau uang",
+        "Jumlah jiwa",
+        "Status pembayaran"
+      ]
+    },
+    "events": {
+      "emoji": "📅",
+      "title": "Kegiatan & Acara",
+      "desc": "15 jenis kegiatan dengan pengulangan otomatis, pendaftaran, deadline, dan tracking absensi.",
+      "details": [
+        "15 jenis kegiatan",
+        "Pengulangan otomatis",
+        "Pendaftaran & deadline",
+        "Absensi digital"
+      ]
+    },
+    "broadcast": {
+      "emoji": "📢",
+      "title": "Broadcast Pesan",
+      "desc": "Kirim pesan WhatsApp ke jamaah — personal, grup, gambar + caption, terjadwal, dan broadcast berbasis tag.",
+      "details": [
+        "Personal & grup",
+        "Gambar + caption",
+        "Terjadwal",
+        "Broadcast berbasis tag"
+      ]
+    },
+    "reports": {
+      "emoji": "📄",
+      "title": "Laporan PDF",
+      "desc": "Cetak laporan kas umum bulanan, ZIS PSAK 109, buku wakaf, distribusi qurban, dan daftar hadir.",
+      "details": [
+        "Kas umum bulanan",
+        "ZIS PSAK 109 (5 laporan)",
+        "Buku wakaf",
+        "Distribusi qurban"
+      ]
+    },
+    "qurban": {
+      "emoji": "🐄",
+      "title": "Qurban",
+      "desc": "Modul qurban lengkap — shohibul, hewan (sapi/kambing), panitia, distribusi daging per KK dan wilayah.",
+      "details": [
+        "Shohibul qurban",
+        "Sapi (7 share) & kambing",
+        "Distribusi per KK/wilayah",
+        "Kuota per masjid"
+      ]
+    },
+    "inventory": {
+      "emoji": "🏗️",
+      "title": "Inventaris",
+      "desc": "Kelola aset masjid — AC, sound system, karpet, tanah wakaf, kendaraan — dengan foto dan log perawatan.",
+      "details": [
+        "Foto & kondisi aset",
+        "Log perawatan",
+        "Nilai & penyusutan",
+        "Tanah wakaf"
+      ]
+    },
+    "tpq": {
+      "emoji": "📖",
+      "title": "TPQ / Tahfidz",
+      "desc": "Kelola siswa, halaqah, progress hafalan (per juz/surah), dan iuran SPP bulanan.",
+      "details": [
+        "Data siswa & halaqah",
+        "Progress hafalan",
+        "Absensi TPQ",
+        "Iuran SPP"
+      ]
+    },
+    "prayerSchedule": {
+      "emoji": "🕌",
+      "title": "Jadwal Sholat",
+      "desc": "Jadwal sholat otomatis berdasarkan koordinat masjid, menggunakan metode Kemenag RI.",
+      "details": [
+        "Otomatis dari Kemenag RI",
+        "Berdasarkan lokasi",
+        "Tampil di dashboard",
+        "5 waktu sholat"
+      ]
+    }
+  }
+}

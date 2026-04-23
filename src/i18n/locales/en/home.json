@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "bismillah": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
+    "badge": "Free Platform for Mosque Administrators",
+    "title1": "Manage Your Mosque",
+    "title2": "Easily & Free",
+    "subtitle": "marbot.app helps mosque administrators manage congregation, finance, ZISWAF, and mosque activities — free, hassle-free. Designed for mosques around the globe.",
+    "noCreditCard": "No credit card · No time limit · No ads"
+  },
+  "stats": {
+    "free": { "value": "100%", "label": "Free" },
+    "unlimited": { "value": "∞", "label": "Unlimited" },
+    "anytime": { "value": "24/7", "label": "Access Anytime" }
+  },
+  "features": {
+    "badge": "Complete Features",
+    "title": "Everything Mosque Administrators Need",
+    "subtitle": "From financial tracking to congregation management, all in one platform.",
+    "list": {
+      "congregation": { "title": "Congregation Management", "desc": "Complete congregation data, family, roles (imam, muezzin, marbot, treasurer), and skills." },
+      "finance": { "title": "Finance & ZISWAF", "desc": "Cash recording, budgets, zakat, infaq, sadaqah, waqf — compliant with PSAK 109." },
+      "events": { "title": "Events & Activities", "desc": "15 activity types, automatic recurring, registration, and attendance tracking." },
+      "reports": { "title": "Automatic Reports", "desc": "Print monthly cash reports, ZIS PSAK 109, and qurban distribution in PDF format." },
+      "broadcast": { "title": "WhatsApp Broadcast", "desc": "Send announcements, bills, and reminders to congregation via WhatsApp — automatically." },
+      "security": { "title": "Secure & Private", "desc": "Each mosque has a separate database. Data is never mixed with other mosques." }
+    },
+    "viewAll": "View All Features"
+  },
+  "benefits": {
+    "badge": "For Every Administrator",
+    "title": "Built for Every Role",
+    "subtitle": "Whether you're a DKM chairman, treasurer, or secretary — marbot.app makes your job easier.",
+    "list": {
+      "chairman": {
+        "role": "DKM Chairman",
+        "points": ["Monitor finance in real-time", "Transparent reports to congregation", "Complete audit trail"]
+      },
+      "treasurer": {
+        "role": "Treasurer",
+        "points": ["Automatic recording", "PSAK 109 reports ready to print", "Approval workflow"]
+      },
+      "secretary": {
+        "role": "Secretary",
+        "points": ["Structured congregation data", "Digital documents & letters", "Broadcast announcements"]
+      }
+    }
+  },
+  "steps": {
+    "badge": "Get Started",
+    "title": "3 Easy Steps",
+    "subtitle": "No technical skills required. Start managing your mosque in minutes.",
+    "list": {
+      "register": { "title": "Register Free", "desc": "Create your account and mosque in 2 minutes. No credit card needed." },
+      "addCongregation": { "title": "Add Congregation", "desc": "Enter congregation data or import from existing spreadsheets." },
+      "startManaging": { "title": "Start Managing", "desc": "Track finance, create events, and broadcast to congregation." }
+    }
+  },
+  "ctaSection": {
+    "badge": "Ready to Start?",
+    "title": "Manage Your Mosque Better, Today",
+    "subtitle": "Join mosque administrators who already use marbot.app. Free, forever.",
+    "quran": "مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ"
+  },
+  "prayerTimes": {
+    "arabicQuote": "الصَّلَاةُ عِمَادُ الدِّينِ",
+    "title": "Today's Prayer Times",
+    "next": "Next",
+    "prayers": {
+      "Fajr": "Fajr",
+      "Sunrise": "Sunrise",
+      "Dhuhr": "Dhuhr",
+      "Asr": "Asr",
+      "Maghrib": "Maghrib",
+      "Isha": "Isha"
+    },
+    "hijriMonths": ["Muharram","Safar","Rabi al-Awwal","Rabi al-Thani","Jumada al-Awwal","Jumada al-Thani","Rajab","Sha'ban","Ramadan","Shawwal","Dhu al-Qi'dah","Dhu al-Hijjah"]
+  },
+  "gallery": {
+    "badge": "Documentation",
+    "title": "App Screenshot Gallery",
+    "subtitle": "See how marbot.app helps mosque administrators manage their work easily and neatly.",
+    "items": [
+      { "label": "Financial Dashboard", "desc": "Cash summary, income & expenses overview" },
+      { "label": "Congregation Management", "desc": "Complete data of all congregation members" },
+      { "label": "PSAK 109 Reports", "desc": "ZIS reports ready to print per standard" },
+      { "label": "WhatsApp Broadcast", "desc": "Send announcements to all congregation" },
+      { "label": "Mosque Activities", "desc": "Schedule of lectures, study circles, and events" },
+      { "label": "Multi-user", "desc": "Chairman, treasurer, secretary — one platform" }
+    ],
+    "followInstagram": "Follow @marbot.app on Instagram",
+    "tryDashboard": "Try Dashboard Now",
+    "uploadQuestion": "Is your mosque already using marbot.app?",
+    "uploadDesc": "Send photos/screenshots to our WhatsApp and we will feature them here."
+  },
+  "infaq": {
+    "arabicQuote": "وَأَنفِقُوا فِي سَبِيلِ اللَّهِ",
+    "title": "Donate to marbot.app Program",
+    "subtitle": "marbot.app is 100% free for all mosques. Help us keep running and building new features through your donation — every rupiah is a sadaqah jariyah for the prosperity of mosques.",
+    "uses": [
+      { "title": "Server Operations", "desc": "Hosting and infrastructure costs to serve thousands of mosques across Indonesia." },
+      { "title": "Feature Development", "desc": "Building new features that make mosque administrators' work even easier." },
+      { "title": "User Support", "desc": "A support team ready to help every mosque use the platform effectively." }
+    ],
+    "transferTitle": "Transfer to the Following Account",
+    "aN": "a.n.",
+    "confirmVia": "Confirm transfer via",
+    "whatsapp": "WhatsApp",
+    "closing": "Jazakumullahu khairan"
+  }
+}

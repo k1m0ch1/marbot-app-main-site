@@ -1,0 +1,17 @@
+{
+  "title": "Syarat & Ketentuan",
+  "lastUpdated": "Terakhir diperbarui: 22 April 2026",
+  "sections": [
+    { "title": "1. Penerimaan Ketentuan", "content": "Dengan mendaftar dan menggunakan marbot.app, Anda menyetujui untuk terikat dengan Syarat & Ketentuan ini. Jika Anda tidak menyetujui ketentuan ini, mohon untuk tidak menggunakan layanan kami." },
+    { "title": "2. Deskripsi Layanan", "content": "marbot.app menyediakan platform manajemen masjid berbasis web yang mencakup manajemen jamaah, pencatatan keuangan, pengelolaan ZISWAF, manajemen kegiatan, dan fitur pendukung lainnya. Layanan inti tersedia secara gratis dengan opsi upgrade berbayar untuk fitur tambahan." },
+    { "title": "3. Akun Pengguna", "items": ["Anda harus memberikan informasi yang benar dan akurat saat mendaftar.", "Anda bertanggung jawab menjaga kerahasiaan kredensial akun Anda.", "Anda harus berusia minimal 17 tahun untuk membuat akun.", "Kami berhak menangguhkan akun yang melanggar ketentuan ini."] },
+    { "title": "4. Penggunaan yang Diperbolehkan", "content": "Anda setuju untuk menggunakan layanan kami hanya untuk:", "items": ["Mengelola data dan operasional masjid yang sah.", "Tidak memasukkan data yang melanggar hukum atau merugikan pihak lain.", "Tidak menggunakan layanan untuk tujuan komersial selain yang berkaitan dengan pengelolaan masjid.", "Tidak mencoba mengakses data masjid lain tanpa otorisasi."] },
+    { "title": "5. Kepemilikan Data", "content": "Data yang Anda masukkan ke dalam marbot.app (data jamaah, transaksi, kegiatan, dll.) tetap menjadi milik Anda. Kami tidak mengklaim kepemilikan atas data tersebut. Anda dapat mengunduh atau menghapus data Anda kapan saja." },
+    { "title": "6. Ketersediaan Layanan", "content": "Kami berusaha menyediakan layanan yang tersedia 24/7 namun tidak menjamin ketersediaan tanpa gangguan. Pemeliharaan terjadwal akan diinformasikan sebelumnya. Untuk pengguna Free, target uptime adalah 99%. Untuk pengguna Pro dan Sponsored, target uptime adalah 99.9%." },
+    { "title": "7. Pembayaran & Refund", "content": "Pembayaran untuk paket Pro dan Sponsored dilakukan secara bulanan. Anda dapat membatalkan berlangganan kapan saja. Pembayaran yang sudah dilakukan tidak dapat dikembalikan (non-refundable) untuk periode yang sudah berjalan." },
+    { "title": "8. Pembatasan Tanggung Jawab", "content": "marbot.app disediakan \"sebagaimana adanya\" tanpa jaminan apapun. Kami tidak bertanggung jawab atas kerugian tidak langsung yang timbul dari penggunaan layanan. Tanggung jawab maksimal kami dibatasi pada jumlah yang telah Anda bayarkan dalam 12 bulan terakhir." },
+    { "title": "9. Perubahan Ketentuan", "content": "Kami dapat mengubah ketentuan ini dari waktu ke waktu. Perubahan akan diinformasikan melalui email minimal 30 hari sebelum berlaku efektif. Penggunaan layanan setelah perubahan berlaku dianggap sebagai persetujuan Anda." },
+    { "title": "10. Hukum yang Berlaku", "content": "Ketentuan ini diatur oleh dan ditafsirkan sesuai dengan hukum Republik Indonesia. Setiap sengketa akan diselesaikan melalui musyawarah terlebih dahulu." },
+    { "title": "11. Kontak", "content": "Untuk pertanyaan mengenai Syarat & Ketentuan ini, silakan hubungi admin@marbot.app." }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "badge": "Complete Features",
+  "title": "Everything Mosque Administrators Need",
+  "subtitle": "12 modules designed to cover every aspect of mosque management — from finances to congregation, all in one place.",
+  "modules": {
+    "dashboard": {
+      "emoji": "📊",
+      "title": "Dashboard",
+      "desc": "An at-a-glance overview of your mosque's key metrics and recent activity.",
+      "details": [
+        "Real-time financial summary: income, expenses, and balances.",
+        "Congregation growth trends and attendance charts.",
+        "Upcoming events and pending task reminders.",
+        "Quick-access cards for ZISWAF, reports, and broadcast status."
+      ]
+    },
+    "congregation": {
+      "emoji": "👥",
+      "title": "Congregation Management",
+      "desc": "Complete congregation data with family relationships, roles, and skills.",
+      "details": [
+        "Store full congregation profiles: name, address, phone, family members.",
+        "Assign roles such as imam, muezzin, marbot, treasurer, or secretary.",
+        "Record skills and expertise for better community coordination.",
+        "Search, filter, and sort congregation data instantly."
+      ]
+    },
+    "finance": {
+      "emoji": "💰",
+      "title": "Finance",
+      "desc": "Cash recording, budgets, and transparent financial tracking for your mosque.",
+      "details": [
+        "Record income and expenses with categories and proof of transaction.",
+        "Set monthly or annual budgets and track actual vs. planned spending.",
+        "Approval workflow for expenditures to ensure accountability.",
+        "Automatic cash flow reports ready for DKM meetings."
+      ]
+    },
+    "ziswaf": {
+      "emoji": "💚",
+      "title": "ZISWAF & Zakat",
+      "desc": "Manage zakat, infaq, sadaqah, and waqf — compliant with PSAK 109.",
+      "details": [
+        "Record all types of ZISWAF collections with donor details.",
+        "PSAK 109-compliant reports ready for audit and transparency.",
+        "Track zakat distribution to mustahik with full documentation.",
+        "Automatic categorization of zakat, infaq, sadaqah, and waqf funds."
+      ]
+    },
+    "zakatFitrah": {
+      "emoji": "🤲",
+      "title": "Zakat Fitrah",
+      "desc": "Organize zakat fitrah collection and distribution during Ramadan.",
+      "details": [
+        "Record muzakki names and the amount of zakat fitrah collected.",
+        "Track distribution to mustahik with receipt confirmation.",
+        "Automatic summary of total collected vs. total distributed.",
+        "Print collection and distribution reports for transparency."
+      ]
+    },
+    "events": {
+      "emoji": "📅",
+      "title": "Events & Activities",
+      "desc": "15 activity types with automatic recurring, registration, and attendance.",
+      "details": [
+        "Create events from 15 built-in types: study circles, lectures, communal prayers, and more.",
+        "Set up automatic recurring events — daily, weekly, or monthly.",
+        "Open registration and track attendance for each event.",
+        "Broadcast event reminders to congregation via WhatsApp."
+      ]
+    },
+    "broadcast": {
+      "emoji": "📢",
+      "title": "Broadcast Messages",
+      "desc": "Send announcements, bills, and reminders to congregation via WhatsApp.",
+      "details": [
+        "Send broadcast messages to all or selected congregation groups.",
+        "Automatic payment reminders and contribution notices.",
+        "Schedule messages for the right time — no manual sending needed.",
+        "Message templates for common announcements and invitations."
+      ]
+    },
+    "reports": {
+      "emoji": "📄",
+      "title": "PDF Reports",
+      "desc": "Generate monthly cash reports, ZIS PSAK 109, and qurban reports in PDF.",
+      "details": [
+        "One-click monthly cash report generation in PDF format.",
+        "PSAK 109-compliant ZISWAF reports ready for audit.",
+        "Qurban distribution reports with donor and recipient details.",
+        "Export congregation data and event attendance summaries."
+      ]
+    },
+    "qurban": {
+      "emoji": "🐄",
+      "title": "Qurban",
+      "desc": "Manage qurban collections, animal procurement, and distribution logistics.",
+      "details": [
+        "Record qurban contributions from congregation members.",
+        "Track animal procurement: type, weight, cost, and supplier.",
+        "Coordinate distribution to recipients with full documentation.",
+        "Print qurban reports showing contributions, costs, and distribution."
+      ]
+    },
+    "inventory": {
+      "emoji": "🏗️",
+      "title": "Inventory",
+      "desc": "Track mosque assets, supplies, and maintenance needs.",
+      "details": [
+        "Catalog all mosque assets: equipment, furniture, electronics.",
+        "Track maintenance schedules and repair history.",
+        "Monitor supplies and consumables with low-stock alerts.",
+        "Record asset values for transparent financial reporting."
+      ]
+    },
+    "tpq": {
+      "emoji": "📖",
+      "title": "TPQ/Tahfidz",
+      "desc": "Manage Quran education programs, students, teachers, and progress.",
+      "details": [
+        "Enroll students and assign them to classes and teachers.",
+        "Track each student's memorization progress and juz completion.",
+        "Schedule classes and manage teacher availability.",
+        "Generate progress reports for parents and program evaluation."
+      ]
+    },
+    "prayerSchedule": {
+      "emoji": "🕌",
+      "title": "Prayer Schedule",
+      "desc": "Display daily prayer times and manage imam/muezzin schedules.",
+      "details": [
+        "Automatic daily prayer times based on your mosque's location.",
+        "Assign imam and muezzin for each prayer time on a weekly or monthly basis.",
+        "Display schedules in the mosque dashboard for easy reference.",
+        "Notify assigned persons automatically before their scheduled time."
+      ]
+    }
+  },
+  "ctaSection": {
+    "title": "All features, free.",
+    "subtitle": "No hidden fees. No premium tiers. Every mosque deserves proper management tools.",
+    "button": "Register Free Now"
+  }
+}

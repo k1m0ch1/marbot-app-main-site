@@ -1,0 +1,14 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "Last updated: April 22, 2026",
+  "sections": [
+    { "title": "1. Introduction", "content": "marbot.app (\"we\") respects your privacy. This Privacy Policy explains how we collect, use, and protect your personal data when using our services. By using marbot.app, you agree to the practices described in this policy." },
+    { "title": "2. Data We Collect", "content": "We collect the following data:", "items": ["Account data: name, email, and profile information you provide when registering.", "Mosque data: mosque name, address, location coordinates, and mosque profile information.", "Operational data: congregation data, financial transactions, activities, and other data you enter into the application.", "Technical data: IP address, browser type, and log data for security and performance purposes."] },
+    { "title": "3. Data Usage", "content": "Your data is used to:", "items": ["Provide and improve marbot.app services.", "Secure your account and data.", "Send important service-related notifications.", "Fulfill applicable legal obligations."], "note": "We never sell, rent, or share your personal data with third parties for marketing purposes." },
+    { "title": "4. Data Storage & Security", "content": "Data is stored on servers located in Singapore with industry-standard encryption. Each mosque has a separate database — data between mosques is never mixed. We perform daily backups and periodic security audits." },
+    { "title": "5. Your Rights", "content": "You have the right to:", "items": ["Access and download data we store about you.", "Request correction of inaccurate data.", "Request data deletion (subject to applicable regulations).", "Stop using the service at any time."] },
+    { "title": "6. Cookies", "content": "We use cookies to maintain login sessions and your preferences. We do not use third-party tracking cookies for advertising." },
+    { "title": "7. Policy Changes", "content": "We may update this policy from time to time. Significant changes will be communicated via email or in-app notifications." },
+    { "title": "8. Contact", "content": "If you have questions about this privacy policy, please contact us at admin@marbot.app." }
+  ]
+}

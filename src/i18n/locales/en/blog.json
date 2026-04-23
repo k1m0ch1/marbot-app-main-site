@@ -1,0 +1,14 @@
+{
+  "badge": "Blog",
+  "title": "Blog & Articles",
+  "subtitle": "Guides, tips, and education about mosque management.",
+  "comingSoon": "Blog articles coming soon. Stay tuned!",
+  "posts": [
+    { "title": "How to Prepare a Proper Mosque Cash Report", "excerpt": "A complete guide for mosque treasurers in preparing transparent and accountable monthly financial reports.", "category": "Tutorial", "date": "2026-04-15" },
+    { "title": "Understanding PSAK 109 for Mosque Financial Reports", "excerpt": "What is PSAK 109 and why is it important for mosques? A simple explanation for DKM administrators.", "category": "Education", "date": "2026-04-08" },
+    { "title": "5 Tips for Transparent ZISWAF Management at Your Mosque", "excerpt": "Best practices for managing Zakat, Infaq, Sadaqah, and Waqf that can be applied at your mosque.", "category": "Tips", "date": "2026-03-28" },
+    { "title": "Why Mosques in Indonesia Need Digitalization", "excerpt": "Trends in mosque digitalization in Indonesia and how technology can help mosque administrators.", "category": "Insight", "date": "2026-03-15" },
+    { "title": "Digital Qurban Management: More Organized, More Fair", "excerpt": "How technology helps achieve fairer and better-documented qurban meat distribution.", "category": "Tutorial", "date": "2026-03-01" },
+    { "title": "The Role of Marbot in Mosque Operations", "excerpt": "Getting to know the role of marbot — mosque administrators who are the backbone of mosque operations.", "category": "Education", "date": "2026-02-20" }
+  ]
+}

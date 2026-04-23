@@ -1,0 +1,17 @@
+{
+  "badge": "Dokumentasi",
+  "title": "Dokumentasi",
+  "subtitle": "Panduan lengkap untuk menggunakan marbot.app.",
+  "comingSoon": {
+    "title": "Dokumentasi Segera Hadir",
+    "desc": "Kami sedang menyusun panduan lengkap untuk setiap modul. Sementara itu, Anda bisa langsung mencoba aplikasi — antarmuka kami dirancang agar mudah dipahami tanpa manual."
+  },
+  "sections": [
+    { "title": "Memulai", "items": ["Membuat akun masjid", "Setup profil masjid", "Mengundang pengurus", "Import data jamaah"] },
+    { "title": "Manajemen Jamaah", "items": ["Menambah jamaah baru", "Mengelola peran & akses", "Data keluarga", "Tag & kategori"] },
+    { "title": "Keuangan", "items": ["Pencatatan transaksi", "Anggaran bulanan", "Approval workflow", "Laporan keuangan"] },
+    { "title": "ZISWAF", "items": ["Zakat Mal & Profesi", "Infaq & Shadaqah", "Wakaf Tunai & Aset", "Laporan PSAK 109"] },
+    { "title": "Kegiatan", "items": ["Membuat kegiatan baru", "Recurring events", "Pendaftaran & absensi", "Notifikasi pengingat"] },
+    { "title": "Pengaturan", "items": ["Profil masjid", "Manajemen pengguna", "Modul & akses", "Backup & export"] }
+  ]
+}

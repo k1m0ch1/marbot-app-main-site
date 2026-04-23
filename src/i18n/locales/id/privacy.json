@@ -1,0 +1,14 @@
+{
+  "title": "Kebijakan Privasi",
+  "lastUpdated": "Terakhir diperbarui: 22 April 2026",
+  "sections": [
+    { "title": "1. Pendahuluan", "content": "marbot.app (\"kami\") menghargai privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda saat menggunakan layanan kami. Dengan menggunakan marbot.app, Anda menyetujui praktik yang dijelaskan dalam kebijakan ini." },
+    { "title": "2. Data yang Kami Kumpulkan", "content": "Kami mengumpulkan data berikut:", "items": ["Data akun: nama, email, dan informasi profil yang Anda berikan saat mendaftar.", "Data masjid: nama masjid, alamat, koordinat lokasi, dan informasi profil masjid.", "Data operasional: data jamaah, transaksi keuangan, kegiatan, dan data lain yang Anda masukkan ke dalam aplikasi.", "Data teknis: alamat IP, jenis browser, dan data log untuk keperluan keamanan dan performa."] },
+    { "title": "3. Penggunaan Data", "content": "Data Anda digunakan untuk:", "items": ["Menyediakan dan meningkatkan layanan marbot.app.", "Mengamankan akun dan data Anda.", "Mengirimkan notifikasi penting terkait layanan.", "Memenuhi kewajiban hukum yang berlaku."], "note": "Kami tidak pernah menjual, menyewakan, atau membagikan data pribadi Anda kepada pihak ketiga untuk tujuan pemasaran." },
+    { "title": "4. Penyimpanan & Keamanan Data", "content": "Data disimpan di server yang berlokasi di Singapura dengan enkripsi standar industri. Setiap masjid memiliki database terpisah — data antar masjid tidak pernah bercampur. Kami melakukan backup harian dan audit keamanan secara berkala." },
+    { "title": "5. Hak Anda", "content": "Anda berhak untuk:", "items": ["Mengakses dan mengunduh data yang kami simpan tentang Anda.", "Meminta perbaikan data yang tidak akurat.", "Meminta penghapusan data (sesuai ketentuan yang berlaku).", "Menghentikan penggunaan layanan kapan saja."] },
+    { "title": "6. Cookie", "content": "Kami menggunakan cookie untuk menjaga sesi login dan preferensi Anda. Kami tidak menggunakan cookie pelacakan pihak ketiga untuk periklanan." },
+    { "title": "7. Perubahan Kebijakan", "content": "Kami dapat memperbarui kebijakan ini dari waktu ke waktu. Perubahan signifikan akan diinformasikan melalui email atau notifikasi di aplikasi." },
+    { "title": "8. Kontak", "content": "Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, silakan hubungi kami di admin@marbot.app." }
+  ]
+}

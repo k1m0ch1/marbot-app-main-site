@@ -1,0 +1,43 @@
+{
+  "badge": "Tentang Kami",
+  "title": "Cerita di Balik marbot.app",
+  "story": {
+    "paragraphs": [
+      "Saya adalah seorang pengembang perangkat lunak yang juga aktif sebagai pengurus DKM di masjid kami. Setiap bulan, saya menyaksikan langsung betapa rumitnya pengelolaan administrasi masjid — keuangan dicatat di buku tulis, data jamaah tersebar di berbagai berkas, dan laporan ZISWAF harus disusun manual berlembar-lembar. Para pengurus masjid sudah berkorban banyak waktu dan tenaga; mereka tidak seharusnya juga harus berjuang dengan urusan administrasi.",
+      "Ide ini lahir dari sebuah malam yang tidak akan pernah saya lupakan — malam Lailatul Qadr di bulan Ramadhan. Di tengah doa dan munajat yang saya panjatkan, terbit sebuah niat tulus: menjadikan ilmu sebagai sedekah. Saya ingin berkontribusi untuk kemakmuran masjid melalui apa yang saya bisa lakukan — membangun perangkat lunak. Dan saya ingin melakukannya secara gratis, karena kemakmuran masjid tidak seharusnya dibatasi oleh keterbatasan biaya.",
+      "marbot.app adalah wujud nyata dari niat itu. Saya membangunnya di sela-sela waktu luang, belajar dari masalah nyata yang saya temui di lapangan, dan merancangnya untuk benar-benar gratis — bukan freemium, bukan masa percobaan. Setiap masjid, sekecil apapun dan di pelosok manapun, berhak mendapatkan alat manajemen modern tanpa harus mengeluarkan biaya. Nama \"marbot\" sendiri saya pilih sebagai penghormatan kepada para pengurus masjid — pahlawan tak kasat mata yang menjaga rumah Allah setiap harinya.",
+      "Hari ini, marbot.app terus berkembang. Dari manajemen data jamaah, pencatatan keuangan sesuai PSAK 109, broadcast WhatsApp, hingga laporan otomatis — setiap fitur dibangun berdasarkan kebutuhan nyata dari lapangan. Ini bukan sekadar aplikasi; ini adalah sedekah jariyah yang insyaAllah akan terus mengalir pahalanya selama masjid-masjid ini terus berdiri dan melayani umat."
+    ],
+    "photoCaption": "Momen pengembangan marbot.app — berawal dari niat sedekah ilmu"
+  },
+  "values": {
+    "badge": "Prinsip Kami",
+    "title": "Apa yang Menggerakkan Kami",
+    "list": {
+      "freeForever": {
+        "emoji": "💚",
+        "title": "Gratis Selamanya",
+        "desc": "Fitur inti tidak akan pernah berbayar. Kami percaya biaya tidak seharusnya menjadi penghalang bagi masjid manapun untuk memiliki sistem manajemen yang baik."
+      },
+      "openSource": {
+        "emoji": "💻",
+        "title": "Open Source",
+        "desc": "Kode sumber terbuka di GitHub. Siapa saja bisa mengaudit, berkontribusi, atau menjalankannya sendiri jika diinginkan. Transparansi adalah fondasi kepercayaan."
+      },
+      "missionDriven": {
+        "emoji": "🕌",
+        "title": "Berawal dari Niat",
+        "desc": "marbot.app lahir dari niat sedekah ilmu di malam Lailatul Qadr — bukan dari motif bisnis. Misi kami adalah membantu kemakmuran masjid, bukan mencari keuntungan."
+      },
+      "privacy": {
+        "emoji": "🔒",
+        "title": "Privasi Data",
+        "desc": "Setiap masjid memiliki database terpisah. Data jamaah tidak pernah dijual, dibagikan, atau dicampur dengan masjid lain. Kepercayaan Anda adalah amanah kami."
+      }
+    }
+  },
+  "cta": {
+    "title": "Mari Bersama Mengelola Masjid Lebih Baik",
+    "subtitle": "Bergabunglah dengan pengurus masjid yang sudah mempercayai marbot.app. Gratis, selamanya."
+  }
+}

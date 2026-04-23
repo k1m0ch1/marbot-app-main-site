@@ -1,0 +1,17 @@
+{
+  "title": "Terms & Conditions",
+  "lastUpdated": "Last updated: April 22, 2026",
+  "sections": [
+    { "title": "1. Acceptance of Terms", "content": "By registering and using marbot.app, you agree to be bound by these Terms & Conditions. If you do not agree with these terms, please do not use our services." },
+    { "title": "2. Service Description", "content": "marbot.app provides a web-based mosque management platform that includes congregation management, financial recording, ZISWAF management, activity management, and other supporting features. Core services are available for free with paid upgrade options for additional features." },
+    { "title": "3. User Accounts", "items": ["You must provide true and accurate information when registering.", "You are responsible for keeping your account credentials confidential.", "You must be at least 17 years old to create an account.", "We reserve the right to suspend accounts that violate these terms."] },
+    { "title": "4. Permitted Use", "content": "You agree to use our services only for:", "items": ["Managing legitimate mosque data and operations.", "Not entering data that violates the law or harms others.", "Not using the service for commercial purposes other than mosque management.", "Not attempting to access other mosques' data without authorization."] },
+    { "title": "5. Data Ownership", "content": "Data you enter into marbot.app (congregation data, transactions, activities, etc.) remains yours. We do not claim ownership of such data. You can download or delete your data at any time." },
+    { "title": "6. Service Availability", "content": "We strive to provide services available 24/7 but do not guarantee uninterrupted availability. Scheduled maintenance will be communicated in advance. For Free users, the uptime target is 99%. For Pro and Sponsored users, the uptime target is 99.9%." },
+    { "title": "7. Payments & Refunds", "content": "Payments for Pro and Sponsored plans are made monthly. You can cancel your subscription at any time. Payments already made are non-refundable for the current billing period." },
+    { "title": "8. Limitation of Liability", "content": "marbot.app is provided \"as is\" without any warranty. We are not liable for indirect damages arising from the use of the service. Our maximum liability is limited to the amount you have paid in the last 12 months." },
+    { "title": "9. Changes to Terms", "content": "We may change these terms from time to time. Changes will be communicated via email at least 30 days before taking effect. Continued use of the service after changes take effect constitutes your acceptance." },
+    { "title": "10. Governing Law", "content": "These terms are governed by and construed in accordance with the laws of the Republic of Indonesia. Any disputes will be resolved through consultation first." },
+    { "title": "11. Contact", "content": "For questions regarding these Terms & Conditions, please contact admin@marbot.app." }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "features": "Fitur",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "contactUs": "Hubungi Kami",
+    "login": "Masuk",
+    "registerFree": "Daftar Gratis",
+    "docs": "Dokumentasi",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "register": "Daftar"
+  },
+  "footer": {
+    "navigation": "Navigasi",
+    "product": "Produk",
+    "legal": "Legal",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsConditions": "Syarat & Ketentuan",
+    "tagline": "Manajemen Masjid Gratis",
+    "description": "Kelola jamaah, keuangan, ZISWAF, dan kegiatan masjid — tanpa biaya, tanpa ribet. Dirancang untuk pengurus masjid di seluruh dunia.",
+    "copyright": "Manajemen Masjid Gratis. Hak cipta dilindungi.",
+    "madeFor": "Dibuat untuk pengurus masjid di seluruh dunia.",
+    "home": "Beranda"
+  },
+  "meta": {
+    "title": "marbot.app — Manajemen Masjid Gratis",
+    "description": "marbot.app — Sistem manajemen masjid gratis. Kelola jamaah, keuangan, ZISWAF, dan kegiatan masjid dengan mudah."
+  },
+  "cta": {
+    "startFree": "Mulai Gratis Sekarang",
+    "registerNow": "Daftar Sekarang",
+    "registerNowFree": "Daftar Sekarang — Gratis",
+    "viewFeatures": "Lihat Fitur",
+    "viewAllFeatures": "Lihat Semua Fitur",
+    "tryNow": "Coba Sekarang",
+    "backToHome": "Kembali ke Beranda",
+    "seePricing": "Lihat Harga",
+    "contactSales": "Hubungi Kami",
+    "sendMessage": "Kirim Pesan"
+  },
+  "check": "✓"
+}

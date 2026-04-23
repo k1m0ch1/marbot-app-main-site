@@ -1,0 +1,35 @@
+{
+  "badge": "Contact",
+  "title": "We'd Love to Hear from You",
+  "subtitle": "Have a question, a suggestion, or want to collaborate? Reach out — we'd be happy to connect.",
+  "info": {
+    "email": {
+      "label": "Email",
+      "value": "admin@marbot.app"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "value": "Message us on WhatsApp for a quick response"
+    },
+    "location": {
+      "label": "Location",
+      "value": "Indonesia 🇮🇩"
+    }
+  },
+  "form": {
+    "title": "Send a Message",
+    "name": {
+      "label": "Full Name",
+      "placeholder": "Your full name"
+    },
+    "email": {
+      "label": "Email Address",
+      "placeholder": "your@email.com"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Tell us how we can help you..."
+    },
+    "submit": "Send Message"
+  }
+}

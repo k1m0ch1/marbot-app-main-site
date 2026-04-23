@@ -1,0 +1,35 @@
+{
+  "badge": "Kontak",
+  "title": "Hubungi Kami",
+  "subtitle": "Ada pertanyaan, saran, atau ingin bermitra? Kami senang mendengar dari Anda.",
+  "info": {
+    "email": {
+      "label": "Email",
+      "value": "admin@marbot.app"
+    },
+    "whatsapp": {
+      "label": "WhatsApp",
+      "value": "Hubungi via WhatsApp untuk respon cepat"
+    },
+    "location": {
+      "label": "Lokasi",
+      "value": "Indonesia 🇮🇩"
+    }
+  },
+  "form": {
+    "title": "Kirim Pesan",
+    "name": {
+      "label": "Nama Lengkap",
+      "placeholder": "Nama Anda"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "email@contoh.com"
+    },
+    "message": {
+      "label": "Pesan",
+      "placeholder": "Tulis pesan Anda di sini..."
+    },
+    "submit": "Kirim Pesan"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "badge": "About Us",
+  "title": "The Story Behind marbot.app",
+  "story": {
+    "paragraphs": [
+      "I am a software developer who also serves as an active member of a mosque management committee (DKM). Every month, I witnessed firsthand the struggle of managing mosque administration — finances recorded in handwritten ledgers, congregation data scattered across loose papers, and ZISWAF reports that took hours to compile manually. Mosque administrators already sacrifice so much of their time and energy; they should not have to struggle with administrative chaos on top of that.",
+      "The idea came to me on a night I will never forget — Lailatul Qadr, the holiest night of Ramadhan. Among the prayers and supplications I offered that evening, a sincere intention formed in my heart: to give knowledge as charity. I wanted to contribute to the flourishing of mosques through what I do best — building software. And I wanted to do it completely free, because the prosperity of a mosque should never be limited by a lack of funds.",
+      "marbot.app is the realization of that intention. I built it in my spare time, learning from real problems I encountered in the field, and designed it to be truly free — not freemium, not a trial. Every mosque, no matter how small or remote, deserves modern management tools without any cost. The name \"marbot\" itself was chosen as a tribute to mosque caretakers — the unsung heroes who maintain the house of Allah every single day.",
+      "Today, marbot.app continues to grow. From congregation management to PSAK 109-compliant financial records, WhatsApp broadcasting to automatic report generation — every feature is built around real needs from the field. This is more than just an app; it is a sadaqah jariyah that, by the grace of Allah, will continue to flow in reward as long as these mosques stand and serve their communities around the world."
+    ],
+    "photoCaption": "Building marbot.app — started from an intention to give knowledge as charity"
+  },
+  "values": {
+    "badge": "Our Principles",
+    "title": "What Drives Us",
+    "list": {
+      "freeForever": {
+        "emoji": "💚",
+        "title": "Free, Forever",
+        "desc": "Core features will never have a price tag. We believe cost should never be a barrier for any mosque — whether in Indonesia, Malaysia, or anywhere in the world — to have proper management tools."
+      },
+      "openSource": {
+        "emoji": "💻",
+        "title": "Open Source",
+        "desc": "Our source code is open on GitHub. Anyone can audit it, contribute to it, or self-host it. Transparency is the foundation of trust — especially when handling mosque data."
+      },
+      "missionDriven": {
+        "emoji": "🕌",
+        "title": "Born from Purpose",
+        "desc": "marbot.app was born from a sincere intention on Lailatul Qadr — not from a business plan. Our mission is to help mosques thrive and serve their communities, not to generate profit."
+      },
+      "privacy": {
+        "emoji": "🔒",
+        "title": "Data Privacy",
+        "desc": "Each mosque has its own isolated database. Congregation data is never sold, shared, or mixed with other mosques. Your trust is a responsibility we take seriously."
+      }
+    }
+  },
+  "cta": {
+    "title": "Join the Movement",
+    "subtitle": "Help us make mosque management effortless for every administrator around the world. Start using marbot.app today — it's free."
+  }
+}

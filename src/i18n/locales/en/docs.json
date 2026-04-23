@@ -1,0 +1,17 @@
+{
+  "badge": "Documentation",
+  "title": "Documentation",
+  "subtitle": "Complete guide for using marbot.app.",
+  "comingSoon": {
+    "title": "Documentation Coming Soon",
+    "desc": "We are preparing a complete guide for every module. In the meantime, you can try the app directly — our interface is designed to be intuitive without a manual."
+  },
+  "sections": [
+    { "title": "Getting Started", "items": ["Create mosque account", "Setup mosque profile", "Invite administrators", "Import congregation data"] },
+    { "title": "Congregation Management", "items": ["Add new member", "Manage roles & access", "Family data", "Tags & categories"] },
+    { "title": "Finance", "items": ["Record transactions", "Monthly budget", "Approval workflow", "Financial reports"] },
+    { "title": "ZISWAF", "items": ["Zakat Mal & Profession", "Infaq & Sadaqah", "Cash & Asset Waqf", "PSAK 109 Reports"] },
+    { "title": "Activities", "items": ["Create new activity", "Recurring events", "Registration & attendance", "Reminder notifications"] },
+    { "title": "Settings", "items": ["Mosque profile", "User management", "Modules & access", "Backup & export"] }
+  ]
+}

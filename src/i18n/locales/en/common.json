@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "features": "Features",
+    "about": "About",
+    "contact": "Contact",
+    "contactUs": "Contact Us",
+    "login": "Log In",
+    "registerFree": "Register Free",
+    "docs": "Docs",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "register": "Register"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "product": "Product",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions",
+    "tagline": "Free Mosque Management",
+    "description": "Manage congregation, finance, ZISWAF, and mosque activities — free, hassle-free. Designed for mosque administrators around the globe.",
+    "copyright": "Free Mosque Management. All rights reserved.",
+    "madeFor": "Made for mosque administrators around the globe.",
+    "home": "Home"
+  },
+  "meta": {
+    "title": "marbot.app — Free Mosque Management",
+    "description": "marbot.app — Free mosque management system. Manage congregation, finance, ZISWAF, and mosque activities easily."
+  },
+  "cta": {
+    "startFree": "Start Free Now",
+    "registerNow": "Register Now",
+    "registerNowFree": "Register Now — Free",
+    "viewFeatures": "View Features",
+    "viewAllFeatures": "View All Features",
+    "tryNow": "Try Now",
+    "backToHome": "Back to Home",
+    "seePricing": "See Pricing",
+    "contactSales": "Contact Sales",
+    "sendMessage": "Send Message"
+  },
+  "check": "✓"
+}

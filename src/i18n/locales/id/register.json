@@ -1,0 +1,68 @@
+{
+  "badge": "Daftar",
+  "title": "Daftar Masjid Anda",
+  "subtitle": "Buat akun dan mulai kelola masjid Anda secara gratis. Hanya membutuhkan 2 menit.",
+  "noCreditCard": "Tanpa kartu kredit. Tanpa batas waktu.",
+  "form": {
+    "name": {
+      "label": "Nama Pengurus",
+      "placeholder": "Nama lengkap Anda"
+    },
+    "phone": {
+      "label": "Nomor Telepon",
+      "placeholder": "08xxxxxxxxxx"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "email@contoh.com"
+    },
+    "mosqueName": {
+      "label": "Nama Masjid",
+      "placeholder": "Masjid Al-Ikhlas"
+    },
+    "mosqueLocation": {
+      "label": "Lokasi Masjid",
+      "placeholder": "Contoh: Jl. Masjid No. 1, Kel. Sukamaju, Kec. Cilandak, Jakarta Selatan"
+    },
+    "isMosqueAdmin": {
+      "label": "Apakah Anda pengurus masjid?",
+      "options": {
+        "yes": "Ya",
+        "no": "Tidak"
+      }
+    },
+    "position": {
+      "label": "Jabatan",
+      "placeholder": "Pilih jabatan Anda",
+      "options": {
+        "chairman": "Ketua DKM",
+        "treasurer": "Bendahara",
+        "secretary": "Sekretaris",
+        "marbot": "Marbot",
+        "other": "Lainnya"
+      }
+    },
+    "referral": {
+      "label": "Dari mana mengetahui website ini?",
+      "placeholder": "Pilih sumber",
+      "options": {
+        "google": "Google",
+        "socialMedia": "Media Sosial",
+        "friend": "Rekomendasi Teman",
+        "whatsapp": "WhatsApp",
+        "other": "Lainnya"
+      }
+    },
+    "message": {
+      "label": "Pesan tambahan",
+      "placeholder": "Ceritakan kebutuhan masjid Anda (opsional)"
+    },
+    "submit": "Daftar Sekarang — Gratis"
+  },
+  "success": {
+    "title": "Pendaftaran Berhasil!",
+    "subtitle": "Terima kasih telah mendaftar. Tim kami akan menghubungi Anda dalam 1x24 jam untuk mengaktifkan akun masjid Anda.",
+    "checkEmail": "Silakan cek email Anda untuk konfirmasi pendaftaran.",
+    "backToHome": "Kembali ke Beranda"
+  }
+}

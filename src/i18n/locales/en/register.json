@@ -1,0 +1,65 @@
+{
+  "badge": "Register",
+  "title": "Register Your Mosque — Free",
+  "subtitle": "Create your account and start managing your mosque in minutes. No credit card needed, no time limit.",
+  "form": {
+    "name": {
+      "label": "Administrator Name",
+      "placeholder": "Enter your full name as mosque administrator"
+    },
+    "phone": {
+      "label": "Phone Number",
+      "placeholder": "e.g. 081234567890"
+    },
+    "email": {
+      "label": "Email Address",
+      "placeholder": "Enter your email address"
+    },
+    "mosqueName": {
+      "label": "Mosque Name",
+      "placeholder": "Enter your mosque name"
+    },
+    "mosqueLocation": {
+      "label": "Mosque Location",
+      "placeholder": "Enter the address or area of your mosque"
+    },
+    "isMosqueAdmin": {
+      "label": "Are you a mosque administrator?",
+      "options": {
+        "yes": "Yes, I am a mosque administrator",
+        "no": "No, I am registering on behalf of an administrator"
+      }
+    },
+    "role": {
+      "label": "Your Role",
+      "placeholder": "Select your role",
+      "options": {
+        "chairman": "DKM Chairman",
+        "treasurer": "Treasurer",
+        "secretary": "Secretary",
+        "marbot": "Marbot / Caretaker",
+        "other": "Other"
+      }
+    },
+    "referralSource": {
+      "label": "How did you hear about marbot.app?",
+      "placeholder": "Select one",
+      "options": {
+        "google": "Google",
+        "socialMedia": "Social Media",
+        "friendRecommendation": "Friend Recommendation",
+        "whatsapp": "WhatsApp",
+        "other": "Other"
+      }
+    },
+    "additionalMessage": {
+      "label": "Additional Message (Optional)",
+      "placeholder": "Anything else you'd like us to know?"
+    },
+    "submit": "Register Free Now"
+  },
+  "success": {
+    "title": "Registration Successful!",
+    "message": "Thank you for registering your mosque on marbot.app. We'll review your registration and send you access details via email shortly."
+  }
+}

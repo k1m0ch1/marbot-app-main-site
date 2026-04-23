@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "bismillah": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
+    "badge": "Platform Gratis untuk Pengurus Masjid",
+    "title1": "Kelola Masjid Anda",
+    "title2": "dengan Mudah & Gratis",
+    "subtitle": "marbot.app membantu pengurus masjid mengelola jamaah, keuangan, ZISWAF, dan kegiatan — tanpa biaya, tanpa ribet. Dirancang untuk masjid di seluruh dunia.",
+    "noCreditCard": "Tanpa kartu kredit · Tanpa batas waktu · Tanpa iklan"
+  },
+  "stats": {
+    "free": { "value": "100%", "label": "Gratis" },
+    "unlimited": { "value": "∞", "label": "Tanpa Batas" },
+    "anytime": { "value": "24/7", "label": "Akses Kapan Saja" }
+  },
+  "features": {
+    "badge": "Fitur Lengkap",
+    "title": "Semua yang Pengurus Masjid Butuhkan",
+    "subtitle": "Dari pencatatan keuangan hingga manajemen jamaah, semua ada dalam satu platform.",
+    "list": {
+      "congregation": { "title": "Manajemen Jamaah", "desc": "Data lengkap jamaah, keluarga, peran (imam, muadzin, marbot, bendahara), dan keahlian." },
+      "finance": { "title": "Keuangan & ZISWAF", "desc": "Pencatatan kas, anggaran, zakat, infaq, sedekah, wakaf — sesuai PSAK 109." },
+      "events": { "title": "Kegiatan & Acara", "desc": "15 jenis kegiatan, pengulangan otomatis, pendaftaran, dan absensi." },
+      "reports": { "title": "Laporan Otomatis", "desc": "Cetak laporan kas bulanan, ZIS PSAK 109, dan distribusi qurban dalam format PDF." },
+      "broadcast": { "title": "Broadcast WhatsApp", "desc": "Kirim pengumuman, tagihan, dan reminder ke jamaah via WhatsApp — otomatis." },
+      "security": { "title": "Aman & Privat", "desc": "Setiap masjid memiliki database terpisah. Data tidak pernah bercampur." }
+    },
+    "viewAll": "Lihat Semua Fitur"
+  },
+  "benefits": {
+    "badge": "Untuk Setiap Pengurus",
+    "title": "Dibuat untuk Setiap Peran",
+    "subtitle": "Baik Anda ketua DKM, bendahara, atau sekretaris — marbot.app memudahkan tugas Anda.",
+    "list": {
+      "chairman": {
+        "role": "Ketua DKM",
+        "points": ["Pantau keuangan real-time", "Laporan transparan ke jamaah", "Audit trail lengkap"]
+      },
+      "treasurer": {
+        "role": "Bendahara",
+        "points": ["Pencatatan otomatis", "Laporan PSAK 109 siap cetak", "Approval workflow"]
+      },
+      "secretary": {
+        "role": "Sekretaris",
+        "points": ["Data jamaah terstruktur", "Surat & dokumentasi digital", "Broadcast pengumuman"]
+      }
+    }
+  },
+  "steps": {
+    "badge": "Mulai Sekarang",
+    "title": "3 Langkah Mudah",
+    "subtitle": "Tidak perlu keahlian teknis. Mulai kelola masjid Anda dalam hitungan menit.",
+    "list": {
+      "register": { "title": "Daftar Gratis", "desc": "Buat akun dan masjid Anda dalam 2 menit. Tanpa kartu kredit." },
+      "addCongregation": { "title": "Tambah Jamaah", "desc": "Input data jamaah atau import dari spreadsheet yang sudah ada." },
+      "startManaging": { "title": "Mulai Kelola", "desc": "Catat keuangan, buat kegiatan, dan kirim broadcast ke jamaah." }
+    }
+  },
+  "ctaSection": {
+    "badge": "Siap Memulai?",
+    "title": "Kelola Masjid Lebih Baik, Hari Ini",
+    "subtitle": "Bergabung dengan pengurus masjid yang sudah menggunakan marbot.app. Gratis, selamanya.",
+    "quran": "مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ"
+  },
+  "prayerTimes": {
+    "arabicQuote": "الصَّلَاةُ عِمَادُ الدِّينِ",
+    "title": "Jadwal Sholat Hari Ini",
+    "next": "Selanjutnya",
+    "prayers": {
+      "Fajr": "Subuh",
+      "Sunrise": "Syuruq",
+      "Dhuhr": "Dzuhur",
+      "Asr": "Ashar",
+      "Maghrib": "Maghrib",
+      "Isha": "Isya"
+    },
+    "hijriMonths": ["Muharram","Shafar","Rabiul Awal","Rabiul Akhir","Jumadil Awal","Jumadil Akhir","Rajab","Sya'ban","Ramadhan","Syawal","Dzulqa'dah","Dzulhijjah"]
+  },
+  "gallery": {
+    "badge": "Dokumentasi",
+    "title": "Galeri Tampilan Aplikasi",
+    "subtitle": "Lihat bagaimana marbot.app membantu pengurus masjid mengelola administrasi dengan mudah dan rapi.",
+    "items": [
+      { "label": "Dashboard Keuangan", "desc": "Ringkasan kas, pemasukan & pengeluaran masjid" },
+      { "label": "Manajemen Jamaah", "desc": "Data lengkap seluruh anggota jamaah" },
+      { "label": "Laporan PSAK 109", "desc": "Laporan ZIS siap cetak sesuai standar" },
+      { "label": "Broadcast WhatsApp", "desc": "Kirim pengumuman ke seluruh jamaah" },
+      { "label": "Kegiatan Masjid", "desc": "Jadwal kajian, pengajian, dan acara" },
+      { "label": "Multi-pengguna", "desc": "Ketua, bendahara, sekretaris — satu platform" }
+    ],
+    "followInstagram": "Ikuti @marbot.app di Instagram",
+    "tryDashboard": "Coba Dashboard Sekarang",
+    "uploadQuestion": "Masjid Anda sudah menggunakan marbot.app?",
+    "uploadDesc": "Kirim foto/screenshot ke WhatsApp kami dan kami akan tampilkan di sini."
+  },
+  "infaq": {
+    "arabicQuote": "وَأَنفِقُوا فِي سَبِيلِ اللَّهِ",
+    "title": "Infaq ke Program marbot.app",
+    "subtitle": "marbot.app 100% gratis untuk semua masjid. Bantu kami terus beroperasi dan mengembangkan fitur baru melalui infaq Anda — setiap rupiah adalah amal jariyah untuk kemakmuran masjid.",
+    "uses": [
+      { "title": "Operasional Server", "desc": "Biaya hosting dan infrastruktur untuk melayani ribuan masjid di seluruh Indonesia." },
+      { "title": "Pengembangan Fitur", "desc": "Membangun fitur-fitur baru yang semakin memudahkan pengurus masjid." },
+      { "title": "Dukungan Pengguna", "desc": "Tim support yang siap membantu setiap masjid dalam menggunakan platform ini." }
+    ],
+    "transferTitle": "Transfer ke Rekening Berikut",
+    "aN": "a.n.",
+    "confirmVia": "Konfirmasi transfer via",
+    "whatsapp": "WhatsApp",
+    "closing": "Jazakumullahu khairan"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "badge": "Blog",
+  "title": "Blog & Artikel",
+  "subtitle": "Panduan, tips, dan edukasi seputar pengelolaan masjid.",
+  "comingSoon": "Artikel blog akan segera tersedia. Stay tuned!",
+  "posts": [
+    { "title": "Cara Menyusun Laporan Kas Masjid yang Benar", "excerpt": "Panduan lengkap untuk bendahara masjid dalam menyusun laporan keuangan bulanan yang transparan dan akuntabel.", "category": "Tutorial", "date": "2026-04-15" },
+    { "title": "Memahami PSAK 109 untuk Laporan Keuangan Masjid", "excerpt": "Apa itu PSAK 109 dan mengapa penting bagi masjid? Penjelasan sederhana untuk pengurus DKM.", "category": "Edukasi", "date": "2026-04-08" },
+    { "title": "5 Tips Mengelola ZISWAF di Masjid agar Transparan", "excerpt": "Best practice pengelolaan Zakat, Infaq, Sedekah, dan Wakaf yang bisa diterapkan di masjid Anda.", "category": "Tips", "date": "2026-03-28" },
+    { "title": "Mengapa Masjid di Indonesia Perlu Digitalisasi?", "excerpt": "Tren digitalisasi masjid di Indonesia dan bagaimana teknologi bisa membantu pengurus masjid.", "category": "Insight", "date": "2026-03-15" },
+    { "title": "Manajemen Qurban Digital: Lebih Tertib, Lebih Adil", "excerpt": "Bagaimana teknologi membantu distribusi daging qurban yang lebih adil dan terdokumentasi.", "category": "Tutorial", "date": "2026-03-01" },
+    { "title": "Peran Marbot dalam Keberlangsungan Masjid", "excerpt": "Mengenal lebih dekat peran marbot — pengurus masjid yang menjadi tulang punggung operasional masjid.", "category": "Edukasi", "date": "2026-02-20" }
+  ]
+}
