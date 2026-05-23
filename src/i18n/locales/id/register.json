@@ -1,15 +1,14 @@
 {
   "badge": "Daftar",
-  "title": "Daftar Masjid Anda",
+  "title": "Daftarkan Masjid Anda",
   "subtitle": "Buat akun dan mulai kelola masjid Anda secara gratis. Hanya membutuhkan 2 menit.",
-  "noCreditCard": "Tanpa kartu kredit. Tanpa batas waktu.",
   "form": {
     "name": {
       "label": "Nama Pengurus",
-      "placeholder": "Nama lengkap Anda"
+      "placeholder": "Nama lengkap Anda sebagai pengurus masjid"
     },
     "phone": {
-      "label": "Nomor Telepon",
+      "label": "Nomor HP",
       "placeholder": "08xxxxxxxxxx"
     },
     "email": {
@@ -21,8 +20,8 @@
       "placeholder": "Masjid Al-Ikhlas"
     },
     "mosqueLocation": {
-      "label": "Lokasi Masjid",
-      "placeholder": "Contoh: Jl. Masjid No. 1, Kel. Sukamaju, Kec. Cilandak, Jakarta Selatan"
+      "label": "Alamat Masjid",
+      "placeholder": "Jl. Masjid No. 1, Kel. Sukamaju, Kec. Cilandak, Jakarta Selatan"
     },
     "isMosqueAdmin": {
       "label": "Apakah Anda pengurus masjid?",
@@ -31,7 +30,7 @@
         "no": "Tidak"
       }
     },
-    "position": {
+    "role": {
       "label": "Jabatan",
       "placeholder": "Pilih jabatan Anda",
       "options": {
@@ -42,20 +41,24 @@
         "other": "Lainnya"
       }
     },
-    "referral": {
-      "label": "Dari mana mengetahui website ini?",
+    "referralSource": {
+      "label": "Dari mana mengetahui marbot.app?",
       "placeholder": "Pilih sumber",
       "options": {
         "google": "Google",
         "socialMedia": "Media Sosial",
-        "friend": "Rekomendasi Teman",
+        "friendRecommendation": "Rekomendasi Teman",
         "whatsapp": "WhatsApp",
         "other": "Lainnya"
       }
     },
-    "message": {
-      "label": "Pesan tambahan",
+    "additionalMessage": {
+      "label": "Pesan Tambahan",
       "placeholder": "Ceritakan kebutuhan masjid Anda (opsional)"
+    },
+    "mapsLink": {
+      "label": "Link Google Maps",
+      "helper": "Buka Google Maps → cari masjid Anda → klik Share → salin link"
     },
     "submit": "Daftar Sekarang — Gratis"
   },

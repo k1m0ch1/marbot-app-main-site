@@ -18,6 +18,7 @@ const ACCOUNTS = [
 ];
 
 function CopyButton({ text }) {
+  const { t } = useTranslation("home");
   const [copied, setCopied] = useState(false);
   const copy = () => {
     navigator.clipboard.writeText(text);
@@ -28,7 +29,7 @@ function CopyButton({ text }) {
     <button
       onClick={copy}
       className="ml-2 rounded-lg p-1 text-brand-500 hover:bg-brand-50"
-      title="Salin nomor rekening"
+      title={t("infaq.copyAccountNumber")}
     >
       {copied ? <Check size={14} className="text-green-600" /> : <Copy size={14} />}
     </button>

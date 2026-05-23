@@ -150,7 +150,7 @@ export default function Register() {
           {/* Google Maps Link */}
           <div>
             <label className="block text-sm font-medium text-ink-700">
-              Google Maps Link <span className="text-red-500">*</span>
+              {t("register:form.mapsLink.label")} <span className="text-red-500">*</span>
             </label>
             <input
               type="url"
@@ -160,7 +160,7 @@ export default function Register() {
               placeholder="https://maps.google.com/..."
             />
             <p className="mt-1 text-xs text-ink-400">
-              Buka Google Maps → cari masjid Anda → klik Share → salin link
+              {t("register:form.mapsLink.helper")}
             </p>
           </div>
 

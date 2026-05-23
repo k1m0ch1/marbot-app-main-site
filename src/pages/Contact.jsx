@@ -4,6 +4,16 @@ import Button from "../components/ui/Button";
 export default function Contact() {
   const { t } = useTranslation(["contact", "common"]);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const message = form.message.value;
+    const text = `Nama: ${name}\nEmail: ${email}\nPesan: ${message}`;
+    window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(text)}`, "_blank");
+  };
+
   const contactItems = [
     {
       emoji: "✉️",
@@ -64,13 +74,14 @@ export default function Contact() {
             <h3 className="font-display text-lg font-bold text-ink-900">
               {t("contact:form.title")}
             </h3>
-            <form className="mt-4 space-y-4" onSubmit={(e) => e.preventDefault()}>
+            <form className="mt-4 space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label className="block text-sm font-medium text-ink-600">
                   {t("contact:form.name.label")}
                 </label>
                 <input
                   type="text"
+                  name="name"
                   className="mt-1 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
                   placeholder={t("contact:form.name.placeholder")}
                 />
@@ -81,6 +92,7 @@ export default function Contact() {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   className="mt-1 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
                   placeholder={t("contact:form.email.placeholder")}
                 />
@@ -90,6 +102,7 @@ export default function Contact() {
                   {t("contact:form.message.label")}
                 </label>
                 <textarea
+                  name="message"
                   rows={4}
                   className="mt-1 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
                   placeholder={t("contact:form.message.placeholder")}

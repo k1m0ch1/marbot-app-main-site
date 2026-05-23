@@ -56,6 +56,10 @@
       "label": "Additional Message (Optional)",
       "placeholder": "Anything else you'd like us to know?"
     },
+    "mapsLink": {
+      "label": "Google Maps Link",
+      "helper": "Open Google Maps → find your mosque → click Share → copy the link"
+    },
     "submit": "Register Free Now"
   },
   "success": {
