@@ -1,5 +1,6 @@
+import { useState, useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import { Instagram, ExternalLink } from "lucide-react";
+import { Instagram, ExternalLink, X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const SCREENSHOTS = [
   { src: "/app/web-ss-1.png" },
@@ -9,9 +10,76 @@ const SCREENSHOTS = [
   { src: "/app/web-ss-5-menu.png" },
 ];
 
+function Lightbox({ images, labels, current, onClose, onPrev, onNext }) {
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+      onClick={onClose}
+    >
+      <div
+        className="relative mx-4 flex max-h-[90vh] max-w-5xl flex-col items-center"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Close */}
+        <button
+          onClick={onClose}
+          className="absolute -top-12 right-0 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
+        >
+          <X size={24} />
+        </button>
+
+        {/* Image */}
+        <img
+          src={images[current]}
+          alt={labels[current]}
+          className="max-h-[80vh] w-auto rounded-xl shadow-2xl"
+        />
+        <p className="mt-3 text-sm font-medium text-white">{labels[current]}</p>
+
+        {/* Nav arrows */}
+        {images.length > 1 && (
+          <>
+            <button
+              onClick={onPrev}
+              className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
+            >
+              <ChevronLeft size={28} />
+            </button>
+            <button
+              onClick={onNext}
+              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
+            >
+              <ChevronRight size={28} />
+            </button>
+          </>
+        )}
+
+        {/* Dots */}
+        <div className="mt-3 flex gap-1.5">
+          {images.map((_, i) => (
+            <span
+              key={i}
+              className={`h-1.5 w-1.5 rounded-full ${i === current ? "bg-white" : "bg-white/40"}`}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Gallery() {
   const { t } = useTranslation("home");
   const items = t("gallery.items", { returnObjects: true });
+  const [lightboxIdx, setLightboxIdx] = useState(-1);
+
+  const images = items.map((_, i) => SCREENSHOTS[i % SCREENSHOTS.length].src);
+  const labels = items.map((item) => item.label);
+
+  const open = useCallback((i) => setLightboxIdx(i), []);
+  const close = useCallback(() => setLightboxIdx(-1), []);
+  const prev = useCallback(() => setLightboxIdx((i) => (i > 0 ? i - 1 : images.length - 1)), [images.length]);
+  const next = useCallback(() => setLightboxIdx((i) => (i < images.length - 1 ? i + 1 : 0)), [images.length]);
 
   return (
     <section className="bg-white py-20 sm:py-28">
@@ -30,15 +98,16 @@ export default function Gallery() {
           {items.map((item, i) => {
             const ss = SCREENSHOTS[i % SCREENSHOTS.length];
             return (
-              <div
+              <button
                 key={item.label}
-                className="group relative overflow-hidden rounded-2xl bg-gray-100 aspect-[4/3] shadow-md transition-shadow hover:shadow-lg"
+                onClick={() => open(i)}
+                className="group relative overflow-hidden rounded-2xl bg-gray-100 aspect-[4/3] shadow-md transition-shadow hover:shadow-lg cursor-pointer text-left"
               >
                 {/* Screenshot image */}
                 <img
                   src={ss.src}
                   alt={item.label}
-                  className="h-full w-full object-cover object-top"
+                  className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
 
@@ -47,7 +116,7 @@ export default function Gallery() {
                   <p className="font-display text-sm font-bold text-white">{item.label}</p>
                   <p className="text-xs text-white/80">{item.desc}</p>
                 </div>
-              </div>
+              </button>
             );
           })}
         </div>
@@ -89,6 +158,18 @@ export default function Gallery() {
           </p>
         </div>
       </div>
+
+      {/* Lightbox popup */}
+      {lightboxIdx >= 0 && (
+        <Lightbox
+          images={images}
+          labels={labels}
+          current={lightboxIdx}
+          onClose={close}
+          onPrev={prev}
+          onNext={next}
+        />
+      )}
     </section>
   );
 }
