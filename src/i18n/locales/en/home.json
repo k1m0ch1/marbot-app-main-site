@@ -82,10 +82,9 @@
     "items": [
       { "label": "Financial Dashboard", "desc": "Cash summary, income & expenses overview" },
       { "label": "Congregation Management", "desc": "Complete data of all congregation members" },
-      { "label": "PSAK 109 Reports", "desc": "ZIS reports ready to print per standard" },
-      { "label": "WhatsApp Broadcast", "desc": "Send announcements to all congregation" },
-      { "label": "Mosque Activities", "desc": "Schedule of lectures, study circles, and events" },
-      { "label": "Multi-user", "desc": "Chairman, treasurer, secretary — one platform" }
+      { "label": "Transactions & Records", "desc": "Daily income and expense tracking" },
+      { "label": "Mosque Settings", "desc": "Mosque profile, bank accounts, and staff" },
+      { "label": "Mobile Navigation", "desc": "Access all features from your smartphone" }
     ],
     "followInstagram": "Follow @marbot.app on Instagram",
     "tryDashboard": "Try Dashboard Now",

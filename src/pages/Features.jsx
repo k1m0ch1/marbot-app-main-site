@@ -81,7 +81,7 @@ export default function Features() {
           </p>
           <div className="mt-6">
             <Button
-              href="https://login.marbot.app"
+              href="https://marbot.app/register"
               size="lg"
               className="bg-white text-brand-700 hover:bg-brand-50"
             >

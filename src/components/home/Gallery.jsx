@@ -1,13 +1,12 @@
 import { useTranslation } from "react-i18next";
-import { Camera, Instagram, ExternalLink } from "lucide-react";
+import { Instagram, ExternalLink } from "lucide-react";
 
-const ITEM_META = [
-  { emoji: "📊", color: "from-brand-700 to-brand-900" },
-  { emoji: "👥", color: "from-emerald-700 to-emerald-900" },
-  { emoji: "📄", color: "from-teal-700 to-teal-900" },
-  { emoji: "📢", color: "from-green-700 to-green-900" },
-  { emoji: "📅", color: "from-brand-600 to-brand-800" },
-  { emoji: "🔐", color: "from-emerald-600 to-emerald-800" },
+const SCREENSHOTS = [
+  { src: "/app/web-ss-1.png" },
+  { src: "/app/web-ss-2.png" },
+  { src: "/app/web-ss-3.png" },
+  { src: "/app/web-ss-4.png" },
+  { src: "/app/web-ss-5-menu.png" },
 ];
 
 export default function Gallery() {
@@ -29,41 +28,24 @@ export default function Gallery() {
         {/* Grid */}
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => {
-            const meta = ITEM_META[i];
+            const ss = SCREENSHOTS[i % SCREENSHOTS.length];
             return (
               <div
                 key={item.label}
-                className={`group relative overflow-hidden rounded-2xl bg-gradient-to-br ${meta.color} aspect-[4/3] shadow-md`}
+                className="group relative overflow-hidden rounded-2xl bg-gray-100 aspect-[4/3] shadow-md transition-shadow hover:shadow-lg"
               >
-                {/* Geometric pattern overlay */}
-                <div className="absolute inset-0 opacity-5">
-                  <svg width="100%" height="100%" viewBox="0 0 60 60">
-                    <defs>
-                      <pattern id={`gp-${i}`} x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
-                        <path d="M15 0 L30 15 L15 30 L0 15 Z" stroke="white" strokeWidth="0.5" fill="none" />
-                        <circle cx="15" cy="15" r="5" stroke="white" strokeWidth="0.5" fill="none" />
-                      </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill={`url(#gp-${i})`} />
-                  </svg>
-                </div>
+                {/* Screenshot image */}
+                <img
+                  src={ss.src}
+                  alt={item.label}
+                  className="h-full w-full object-cover object-top"
+                  loading="lazy"
+                />
 
-                {/* Browser chrome mock */}
-                <div className="absolute inset-4 rounded-xl bg-white/10 backdrop-blur-[1px]">
-                  <div className="flex h-6 items-center gap-1.5 border-b border-white/10 px-3">
-                    <div className="h-2 w-2 rounded-full bg-white/30" />
-                    <div className="h-2 w-2 rounded-full bg-white/30" />
-                    <div className="h-2 w-2 rounded-full bg-white/30" />
-                  </div>
-                  <div className="flex h-[calc(100%-24px)] items-center justify-center">
-                    <span className="text-5xl">{meta.emoji}</span>
-                  </div>
-                </div>
-
-                {/* Label */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                {/* Label overlay */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4">
                   <p className="font-display text-sm font-bold text-white">{item.label}</p>
-                  <p className="text-xs text-white/70">{item.desc}</p>
+                  <p className="text-xs text-white/80">{item.desc}</p>
                 </div>
               </div>
             );
@@ -82,7 +64,7 @@ export default function Gallery() {
             {t("gallery.followInstagram")}
           </a>
           <a
-            href="https://login.marbot.app"
+            href="https://marbot.app/register"
             className="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand-700"
           >
             <ExternalLink size={16} />
@@ -92,8 +74,7 @@ export default function Gallery() {
 
         {/* Upload CTA */}
         <div className="mt-8 rounded-2xl border border-dashed border-brand-200 bg-brand-50/50 p-6 text-center">
-          <Camera size={28} className="mx-auto text-brand-400" />
-          <p className="mt-3 text-sm font-medium text-ink-700">{t("gallery.uploadQuestion")}</p>
+          <p className="mt-1 text-sm font-medium text-ink-700">{t("gallery.uploadQuestion")}</p>
           <p className="mt-1 text-xs text-ink-400">
             {t("gallery.uploadDesc").split("WhatsApp")[0]}
             <a

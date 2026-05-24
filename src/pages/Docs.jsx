@@ -27,7 +27,7 @@ export default function Docs() {
               {t("docs:comingSoon.desc")}
             </p>
             <div className="mt-6">
-              <Button href="https://login.marbot.app" size="md">
+              <Button href="https://marbot.app/register" size="md">
                 {t("common:cta.tryNow")}
               </Button>
             </div>

@@ -87,7 +87,7 @@ export default function About() {
           <p className="mt-3 text-white/70">{t("about:cta.subtitle")}</p>
           <div className="mt-6">
             <Button
-              href="https://login.marbot.app"
+              href="https://marbot.app/register"
               variant="none"
               size="lg"
               className="bg-white text-brand-700"

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Menu, X, Globe } from "lucide-react";
 
 const LOGIN_URL = "https://login.marbot.app";
+const REGISTER_URL = "https://marbot.app/register";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -89,7 +90,7 @@ export default function Header() {
             {t("nav.login")}
           </a>
           <a
-            href={LOGIN_URL}
+            href={REGISTER_URL}
             className="rounded-lg border border-white/40 px-4 py-2 text-sm font-semibold text-white/90 transition-colors hover:bg-white/10 hover:text-white"
           >
             {t("nav.registerFree")}
@@ -145,7 +146,7 @@ export default function Header() {
               {t("nav.login")}
             </a>
             <a
-              href={LOGIN_URL}
+              href={REGISTER_URL}
               className="rounded-lg border border-white/40 px-4 py-2.5 text-center text-sm font-semibold text-white/90 transition-colors hover:bg-white/10"
             >
               {t("nav.registerFree")}

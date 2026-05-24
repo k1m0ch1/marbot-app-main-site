@@ -82,10 +82,9 @@
     "items": [
       { "label": "Dashboard Keuangan", "desc": "Ringkasan kas, pemasukan & pengeluaran masjid" },
       { "label": "Manajemen Jamaah", "desc": "Data lengkap seluruh anggota jamaah" },
-      { "label": "Laporan PSAK 109", "desc": "Laporan ZIS siap cetak sesuai standar" },
-      { "label": "Broadcast WhatsApp", "desc": "Kirim pengumuman ke seluruh jamaah" },
-      { "label": "Kegiatan Masjid", "desc": "Jadwal kajian, pengajian, dan acara" },
-      { "label": "Multi-pengguna", "desc": "Ketua, bendahara, sekretaris — satu platform" }
+      { "label": "Transaksi & Pencatatan", "desc": "Pencatatan pemasukan dan pengeluaran harian" },
+      { "label": "Pengaturan Masjid", "desc": "Profil masjid, rekening bank, dan pengurus" },
+      { "label": "Navigasi Mobile", "desc": "Akses semua fitur dari smartphone Anda" }
     ],
     "followInstagram": "Ikuti @marbot.app di Instagram",
     "tryDashboard": "Coba Dashboard Sekarang",

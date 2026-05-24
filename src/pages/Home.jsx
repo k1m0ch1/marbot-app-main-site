@@ -17,6 +17,7 @@ import Infaq from "../components/home/Infaq";
 import Gallery from "../components/home/Gallery";
 
 const LOGIN_URL = "https://login.marbot.app";
+const REGISTER_URL = "https://marbot.app/register";
 
 const featureKeys = [
   { icon: Users, emoji: "👥", key: "congregation" },
@@ -87,7 +88,7 @@ export default function Home() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button
-              href={LOGIN_URL}
+              href={REGISTER_URL}
               variant="none"
               size="lg"
               className="bg-brand-500 text-white"
@@ -267,7 +268,7 @@ export default function Home() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button
-              href={LOGIN_URL}
+              href={REGISTER_URL}
               variant="none"
               size="lg"
               className="bg-brand-500 text-white"
