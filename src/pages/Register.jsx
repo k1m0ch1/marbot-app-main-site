@@ -1,24 +1,45 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../components/ui/Button";
 
 const API_URL = "https://api.marbot.app";
+const MAX_PHOTOS = 5;
 
 export default function Register() {
   const { t } = useTranslation(["register", "common"]);
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
-  const [photoPreview, setPhotoPreview] = useState(null);
-  const [photoBase64, setPhotoBase64] = useState(null);
+  const [photos, setPhotos] = useState([]);
+  const fileInput = useRef(null);
+
+  function addPhoto(file) {
+    if (photos.length >= MAX_PHOTOS) {
+      setError(`Maksimal ${MAX_PHOTOS} foto`);
+      return;
+    }
+    if (file.size > 5 * 1024 * 1024) {
+      setError("Ukuran foto maksimal 5MB");
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      setPhotos((prev) => [...prev, { preview: ev.target.result, base64: ev.target.result }]);
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function removePhoto(index) {
+    setPhotos((prev) => prev.filter((_, i) => i !== index));
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
     setError("");
 
-    if (!photoBase64) {
-      setError("Foto verifikasi wajib diupload");
+    if (photos.length === 0) {
+      setError("Minimal 1 foto verifikasi wajib diupload");
       setSubmitting(false);
       return;
     }
@@ -35,7 +56,7 @@ export default function Register() {
       role: form.role?.value || null,
       referral: form.referral?.value || null,
       message: form.message?.value || null,
-      photo_data: photoBase64,
+      photos_data: photos.map((p) => p.base64),
     };
 
     try {
@@ -224,52 +245,62 @@ export default function Register() {
             />
           </div>
 
-          {/* Photo Verification */}
+          {/* Photo Verification — up to 5 */}
           <div>
             <label className="block text-sm font-medium text-ink-700">
               Foto Verifikasi <span className="text-red-500">*</span>
             </label>
             <p className="text-xs text-ink-400 mt-1 mb-2">
-              Upload foto Anda bersama anggota pengurus masjid dalam salah satu kegiatan masjid. Foto ini sebagai bukti bahwa Anda benar-benar bagian dari pengurus masjid.
+              Upload foto Anda bersama anggota pengurus masjid dalam salah satu kegiatan masjid. Maksimal {MAX_PHOTOS} foto.
             </p>
-            {photoPreview ? (
-              <div className="relative inline-block">
-                <img src={photoPreview} alt="Preview" className="max-h-48 rounded-xl border border-gray-200" />
+
+            <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">
+              {photos.map((p, i) => (
+                <div key={i} className="relative group">
+                  <img
+                    src={p.preview}
+                    alt={`Foto ${i + 1}`}
+                    className="w-full aspect-square object-cover rounded-xl border border-gray-200"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => removePhoto(i)}
+                    className="absolute -top-1.5 -right-1.5 w-5 h-5 bg-red-500 text-white rounded-full text-xs flex items-center justify-center hover:bg-red-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    ×
+                  </button>
+                  <span className="absolute bottom-1 left-1 bg-black/50 text-white text-[10px] px-1.5 py-0.5 rounded-md">
+                    {i + 1}/{MAX_PHOTOS}
+                  </span>
+                </div>
+              ))}
+
+              {photos.length < MAX_PHOTOS && (
                 <button
                   type="button"
-                  onClick={() => { setPhotoPreview(null); setPhotoBase64(null); }}
-                  className="absolute -top-2 -right-2 w-6 h-6 bg-red-500 text-white rounded-full text-xs flex items-center justify-center hover:bg-red-600"
+                  onClick={() => fileInput.current?.click()}
+                  className="w-full aspect-square flex flex-col items-center justify-center border-2 border-dashed border-gray-300 rounded-xl cursor-pointer hover:border-brand-500 hover:bg-brand-50/50 transition-colors"
                 >
-                  ×
+                  <svg className="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
+                  <span className="text-[10px] text-gray-400 mt-1">Tambah</span>
                 </button>
-              </div>
-            ) : (
-              <label className="flex flex-col items-center justify-center w-full h-32 border-2 border-dashed border-gray-300 rounded-xl cursor-pointer hover:border-brand-500 hover:bg-brand-50/50 transition-colors">
-                <div className="flex flex-col items-center justify-center text-ink-400">
-                  <svg className="w-8 h-8 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-                  <span className="text-sm">Klik untuk upload foto</span>
-                </div>
-                <input
-                  type="file"
-                  accept="image/jpeg,image/png,image/webp"
-                  className="hidden"
-                  onChange={(e) => {
-                    const file = e.target.files?.[0];
-                    if (!file) return;
-                    if (file.size > 5 * 1024 * 1024) {
-                      setError("Ukuran foto maksimal 5MB");
-                      return;
-                    }
-                    const reader = new FileReader();
-                    reader.onload = (ev) => {
-                      setPhotoPreview(ev.target.result);
-                      setPhotoBase64(ev.target.result);
-                    };
-                    reader.readAsDataURL(file);
-                  }}
-                />
-              </label>
-            )}
+              )}
+            </div>
+
+            <input
+              ref={fileInput}
+              type="file"
+              accept="image/jpeg,image/png,image/webp"
+              className="hidden"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (file) addPhoto(file);
+                e.target.value = "";
+              }}
+            />
+            <p className="text-xs text-ink-400 mt-2">
+              {photos.length} dari {MAX_PHOTOS} foto · Maks 5MB per foto · JPG, PNG, WebP
+            </p>
           </div>
 
           <Button type="submit" disabled={submitting} className="w-full">
