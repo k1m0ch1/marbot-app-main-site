@@ -100,11 +100,7 @@
       { "title": "Feature Development", "desc": "Building new features that make mosque administrators' work even easier." },
       { "title": "User Support", "desc": "A support team ready to help every mosque use the platform effectively." }
     ],
-    "transferTitle": "Transfer to the Following Account",
-    "aN": "a.n.",
-    "confirmVia": "Confirm transfer via",
-    "whatsapp": "WhatsApp",
-    "closing": "Jazakumullahu khairan",
-    "copyAccountNumber": "Copy account number"
+    "comingSoonTitle": "Coming Soon",
+    "comingSoonDesc": "Online infaq transfer feature is under development. Look forward to easy donations directly through the marbot.app platform."
   }
 }

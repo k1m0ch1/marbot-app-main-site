@@ -100,11 +100,7 @@
       { "title": "Pengembangan Fitur", "desc": "Membangun fitur-fitur baru yang semakin memudahkan pengurus masjid." },
       { "title": "Dukungan Pengguna", "desc": "Tim support yang siap membantu setiap masjid dalam menggunakan platform ini." }
     ],
-    "transferTitle": "Transfer ke Rekening Berikut",
-    "aN": "a.n.",
-    "confirmVia": "Konfirmasi transfer via",
-    "whatsapp": "WhatsApp",
-    "closing": "Jazakumullahu khairan",
-    "copyAccountNumber": "Salin nomor rekening"
+    "comingSoonTitle": "Segera Hadir",
+    "comingSoonDesc": "Fitur transfer infaq online sedang dalam pengembangan. Nantikan kemudahan berinfaq langsung melalui platform marbot.app."
   }
 }

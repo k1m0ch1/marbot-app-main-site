@@ -1,40 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { Server, Code2, HeartHandshake, Copy, Check } from "lucide-react";
-import { useState } from "react";
+import { Server, Code2, HeartHandshake } from "lucide-react";
 
 const USE_ICONS = [Server, Code2, HeartHandshake];
-
-const ACCOUNTS = [
-  {
-    bank: "Bank Syariah Indonesia (BSI)",
-    number: "7123456789",
-    name: "Yayasan Digital Marbot",
-  },
-  {
-    bank: "BCA",
-    number: "1234567890",
-    name: "Yayasan Digital Marbot",
-  },
-];
-
-function CopyButton({ text }) {
-  const { t } = useTranslation("home");
-  const [copied, setCopied] = useState(false);
-  const copy = () => {
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-  return (
-    <button
-      onClick={copy}
-      className="ml-2 rounded-lg p-1 text-brand-500 hover:bg-brand-50"
-      title={t("infaq.copyAccountNumber")}
-    >
-      {copied ? <Check size={14} className="text-green-600" /> : <Copy size={14} />}
-    </button>
-  );
-}
 
 export default function Infaq() {
   const { t } = useTranslation("home");
@@ -76,41 +43,16 @@ export default function Infaq() {
           })}
         </div>
 
-        {/* Bank accounts */}
-        <div className="mt-10 rounded-2xl border border-brand-100 bg-white p-8 shadow-sm">
-          <h3 className="mb-6 text-center font-display text-lg font-bold text-brand-800">
-            {t("infaq.transferTitle")}
-          </h3>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {ACCOUNTS.map((acc) => (
-              <div
-                key={acc.bank}
-                className="rounded-xl border border-brand-100 bg-brand-50/50 p-5"
-              >
-                <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">
-                  {acc.bank}
-                </p>
-                <div className="mt-2 flex items-center">
-                  <p className="font-mono text-xl font-bold text-ink-900">{acc.number}</p>
-                  <CopyButton text={acc.number} />
-                </div>
-                <p className="mt-1 text-sm text-ink-500">
-                  {t("infaq.aN")} {acc.name}
-                </p>
-              </div>
-            ))}
+        {/* Coming soon */}
+        <div className="mt-10 rounded-2xl border border-brand-100 bg-white p-8 shadow-sm text-center">
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand-50 text-3xl">
+            🤲
           </div>
-          <p className="mt-6 text-center text-sm text-ink-400">
-            {t("infaq.confirmVia")}{" "}
-            <a
-              href="https://wa.me/6281234567890?text=Assalamu%27alaikum%2C+saya+sudah+infaq+ke+program+marbot.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-brand-600 hover:underline"
-            >
-              {t("infaq.whatsapp")}
-            </a>{" "}
-            · {t("infaq.closing")}
+          <p className="mt-4 font-display text-lg font-bold text-brand-800">
+            {t("infaq.comingSoonTitle")}
+          </p>
+          <p className="mt-2 text-sm text-ink-500 leading-relaxed">
+            {t("infaq.comingSoonDesc")}
           </p>
         </div>
       </div>
