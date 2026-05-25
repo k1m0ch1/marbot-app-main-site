@@ -26,6 +26,8 @@ import enRegister from "./locales/en/register.json";
 import idRegister from "./locales/id/register.json";
 import enReview from "./locales/en/review.json";
 import idReview from "./locales/id/review.json";
+import enInfaq from "./locales/en/infaq.json";
+import idInfaq from "./locales/id/infaq.json";
 import enNotFound from "./locales/en/notFound.json";
 import idNotFound from "./locales/id/notFound.json";
 
@@ -35,7 +37,7 @@ i18n
   .init({
     fallbackLng: "id",
     ns: [
-      "common", "home", "features", "about", "contact", "review",
+      "common", "home", "features", "about", "contact", "review", "infaq",
       "blog", "docs", "faq", "privacy", "terms", "register", "notFound",
     ],
     defaultNS: "common",
@@ -45,12 +47,14 @@ i18n
         about: enAbout, contact: enContact, review: enReview,
         blog: enBlog, docs: enDocs, faq: enFaq, privacy: enPrivacy,
         terms: enTerms, register: enRegister, notFound: enNotFound,
+        infaq: enInfaq,
       },
       id: {
         common: idCommon, home: idHome, features: idFeatures,
         about: idAbout, contact: idContact, review: idReview,
         blog: idBlog, docs: idDocs, faq: idFaq, privacy: idPrivacy,
         terms: idTerms, register: idRegister, notFound: idNotFound,
+        infaq: idInfaq,
       },
     },
     interpolation: { escapeValue: false },

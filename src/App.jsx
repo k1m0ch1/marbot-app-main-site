@@ -12,6 +12,7 @@ import FAQ from "./pages/FAQ";
 import Review from "./pages/Review";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
+import Infaq from "./pages/Infaq";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="terms" element={<Terms />} />
         <Route path="faq" element={<FAQ />} />
         <Route path="register" element={<Register />} />
+        <Route path="infaq" element={<Infaq />} />
         {/* Redirect old Indonesian slugs */}
         <Route path="fitur" element={<Navigate to="/features" replace />} />
         <Route path="tentang" element={<Navigate to="/about" replace />} />
