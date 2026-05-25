@@ -1,0 +1,27 @@
+{
+  "badge": "Review",
+  "title": "Beri Review untuk Marbot",
+  "subtitle": "Bagikan pengalaman Anda menggunakan Marbot. Masukan Anda sangat berarti untuk kami terus berkembang.",
+  "rating": {
+    "label": "Rating",
+    "1": "Sangat Buruk",
+    "2": "Buruk",
+    "3": "Biasa",
+    "4": "Bagus",
+    "5": "Sangat Bagus"
+  },
+  "text": {
+    "label": "Review",
+    "placeholder": "Ceritakan pengalaman Anda menggunakan Marbot..."
+  },
+  "email": {
+    "label": "Email (opsional)",
+    "placeholder": "email@contoh.com",
+    "hint": "Email tidak akan ditampilkan secara publik."
+  },
+  "submit": "Kirim Review",
+  "submitting": "Mengirim...",
+  "submit_another": "Kirim Review Lagi",
+  "success_title": "Terima Kasih!",
+  "success_message": "Review Anda telah berhasil dikirim. Terima kasih atas masukan Anda!"
+}

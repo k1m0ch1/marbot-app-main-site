@@ -15,6 +15,7 @@ export default function Footer() {
     { to: "/docs", label: t("nav.docs") },
     { to: "/blog", label: t("nav.blog") },
     { to: "/faq", label: t("nav.faq") },
+    { to: "/review", label: t("nav.review") },
   ];
 
   const legalLinks = [

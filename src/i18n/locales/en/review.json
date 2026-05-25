@@ -1,0 +1,27 @@
+{
+  "badge": "Review",
+  "title": "Review Marbot",
+  "subtitle": "Share your experience using Marbot. Your feedback helps us grow and improve.",
+  "rating": {
+    "label": "Rating",
+    "1": "Very Poor",
+    "2": "Poor",
+    "3": "Average",
+    "4": "Good",
+    "5": "Excellent"
+  },
+  "text": {
+    "label": "Review",
+    "placeholder": "Tell us about your experience with Marbot..."
+  },
+  "email": {
+    "label": "Email (optional)",
+    "placeholder": "email@example.com",
+    "hint": "Your email will not be displayed publicly."
+  },
+  "submit": "Submit Review",
+  "submitting": "Submitting...",
+  "submit_another": "Submit Another Review",
+  "success_title": "Thank You!",
+  "success_message": "Your review has been submitted successfully. Thank you for your feedback!"
+}

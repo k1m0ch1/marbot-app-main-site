@@ -9,6 +9,7 @@ import Docs from "./pages/Docs";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import FAQ from "./pages/FAQ";
+import Review from "./pages/Review";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
 
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="features" element={<Features />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="review" element={<Review />} />
         <Route path="blog" element={<Blog />} />
         <Route path="docs" element={<Docs />} />
         <Route path="privacy" element={<Privacy />} />

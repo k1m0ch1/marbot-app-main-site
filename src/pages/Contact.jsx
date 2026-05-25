@@ -1,17 +1,51 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../components/ui/Button";
 
+const API_URL = "https://api.marbot.app";
+
+const REASONS_ID = [
+  "Pertanyaan umum",
+  "Ingin bermitra",
+  "Laporan bug",
+  "Permintaan fitur",
+  "Bantuan teknis",
+  "Lainnya",
+];
+
 export default function Contact() {
   const { t } = useTranslation(["contact", "common"]);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
-    const name = form.name.value;
-    const email = form.email.value;
-    const message = form.message.value;
-    const text = `Nama: ${name}\nEmail: ${email}\nPesan: ${message}`;
-    window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(text)}`, "_blank");
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const reason = form.reason?.value || "";
+    const message = form.message.value.trim();
+    if (!name || !email || !message) return;
+
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch(`${API_URL}/api/v1/public/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, reason: reason || null, message }),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.detail || "Gagal mengirim pesan");
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const contactItems = [
@@ -32,6 +66,27 @@ export default function Contact() {
       value: t("contact:info.location.value"),
     },
   ];
+
+  if (submitted) {
+    return (
+      <section className="bg-white py-20 sm:py-28">
+        <div className="mx-auto max-w-md text-center px-4">
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand-50 text-3xl">
+            ✅
+          </div>
+          <h2 className="mt-6 font-display text-2xl font-bold text-ink-900">
+            Pesan Terkirim!
+          </h2>
+          <p className="mt-3 text-ink-500">
+            Terima kasih telah menghubungi kami. Tim kami akan segera merespons.
+          </p>
+          <Button className="mt-6" onClick={() => setSubmitted(false)}>
+            Kirim Pesan Lagi
+          </Button>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="bg-white py-20 sm:py-28">
@@ -82,6 +137,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="name"
+                  required
                   className="mt-1 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
                   placeholder={t("contact:form.name.placeholder")}
                 />
@@ -93,9 +149,22 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
+                  required
                   className="mt-1 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
                   placeholder={t("contact:form.email.placeholder")}
                 />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-ink-600">Alasan</label>
+                <select
+                  name="reason"
+                  className="mt-1 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
+                >
+                  <option value="">Pilih alasan (opsional)</option>
+                  {REASONS_ID.map((r) => (
+                    <option key={r} value={r}>{r}</option>
+                  ))}
+                </select>
               </div>
               <div>
                 <label className="block text-sm font-medium text-ink-600">
@@ -104,12 +173,16 @@ export default function Contact() {
                 <textarea
                   name="message"
                   rows={4}
+                  required
                   className="mt-1 w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-ink-900 outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
                   placeholder={t("contact:form.message.placeholder")}
                 />
               </div>
-              <Button type="submit" className="w-full">
-                {t("contact:form.submit")}
+              {error && (
+                <p className="text-sm text-red-600">{error}</p>
+              )}
+              <Button type="submit" className="w-full" disabled={loading}>
+                {loading ? "Mengirim..." : t("contact:form.submit")}
               </Button>
             </form>
           </div>
