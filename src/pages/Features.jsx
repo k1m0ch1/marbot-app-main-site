@@ -13,6 +13,7 @@ const moduleKeys = [
   "reports",
   "qurban",
   "inventory",
+  "tasks",
   "tpq",
   "prayerSchedule",
 ];

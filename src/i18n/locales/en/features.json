@@ -113,6 +113,17 @@
         "Record asset values for transparent financial reporting."
       ]
     },
+    "tasks": {
+      "emoji": "✅",
+      "title": "Task Management",
+      "desc": "Create, assign, and track tasks among mosque administrators — with comments, deadlines, and completion status.",
+      "details": [
+        "Create tasks and assign to administrators",
+        "Deadlines and priority levels",
+        "Comments and discussion per task",
+        "Status tracking: new, in progress, done"
+      ]
+    },
     "tpq": {
       "emoji": "📖",
       "title": "TPQ/Tahfidz",

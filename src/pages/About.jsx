@@ -38,6 +38,22 @@ export default function About() {
               <p>{t("about:story.paragraphs.2")}</p>
               <p>{t("about:story.paragraphs.3")}</p>
             </div>
+
+            {/* Masjid Nurdjanah — first mosque to adopt marbot.app */}
+            <div className="my-10 overflow-hidden rounded-2xl shadow-md">
+              <img
+                src="/founder2.jpeg"
+                alt={t("about:story.photo2Caption")}
+                className="w-full object-cover"
+              />
+              <p className="bg-gray-50 px-4 py-2 text-center text-xs text-ink-400">
+                {t("about:story.photo2Caption")}
+              </p>
+            </div>
+
+            <div className="space-y-5 text-base leading-relaxed text-ink-600">
+              <p>{t("about:story.paragraphs.4")}</p>
+            </div>
           </div>
         </div>
       </section>
