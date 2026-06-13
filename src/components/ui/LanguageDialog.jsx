@@ -44,7 +44,7 @@ export default function LanguageDialog() {
             onClick={() => choose("en")}
             className="flex flex-col items-center gap-2 rounded-xl border-2 border-gray-100 bg-gray-50 px-4 py-4 transition-all hover:border-brand-500 hover:bg-brand-50 active:scale-95"
           >
-            <span className="text-3xl">🇬🇧</span>
+            <span className="text-3xl">🇺🇸</span>
             <span className="font-semibold text-ink-900 text-sm">English</span>
           </button>
         </div>
