@@ -65,7 +65,7 @@ export default function Header() {
             </Link>
           ))}
           <a
-            href="https://wa.me/6281234567890?text=Assalamu'alaikum%2C%20saya%20tertarik%20dengan%20marbot.app"
+            href="https://wa.me/6285659289271?text=Assalamu'alaikum%2C%20saya%20tertarik%20dengan%20marbot.app"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-lg px-3 py-2 text-sm font-medium text-white/90 transition-colors hover:text-brand-300"
@@ -131,7 +131,7 @@ export default function Header() {
             </Link>
           ))}
           <a
-            href="https://wa.me/6281234567890"
+            href="https://wa.me/6285659289271"
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-lg px-3 py-2.5 text-sm font-medium text-white/90 transition-colors hover:text-brand-300"

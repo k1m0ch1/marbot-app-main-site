@@ -58,7 +58,7 @@ export default function Contact() {
       emoji: "💬",
       label: t("contact:info.whatsapp.label"),
       value: t("contact:info.whatsapp.value"),
-      href: "https://wa.me/6281234567890",
+      href: "https://wa.me/6285659289271",
     },
     {
       emoji: "📍",

@@ -185,7 +185,7 @@ export default function Gallery() {
           <p className="mt-1 text-xs text-ink-400">
             {t("gallery.uploadDesc").split("WhatsApp")[0]}
             <a
-              href="https://wa.me/6281234567890?text=Assalamu%27alaikum%2C+kami+mau+berbagi+dokumentasi+penggunaan+marbot.app"
+              href="https://wa.me/6285659289271?text=Assalamu%27alaikum%2C+kami+mau+berbagi+dokumentasi+penggunaan+marbot.app"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-brand-600 hover:underline"

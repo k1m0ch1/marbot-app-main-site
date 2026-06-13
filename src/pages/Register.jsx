@@ -118,6 +118,45 @@ export default function Register() {
           <p className="mt-4 text-base text-ink-500">{t("register:subtitle")}</p>
         </div>
 
+        {/* Process Flow */}
+        <div className="mt-10">
+          <p className="text-center text-xs font-semibold uppercase tracking-widest text-brand-500 mb-6">
+            {t("register:process.heading", "Proses Pendaftaran")}
+          </p>
+          <div className="relative flex flex-col gap-0 sm:flex-row sm:items-start sm:justify-between">
+            {/* connector line — desktop only */}
+            <div className="absolute top-6 left-0 right-0 hidden h-px bg-brand-100 sm:block" style={{ zIndex: 0 }} />
+            {[
+              { icon: "📝", label: t("register:process.step1", "Mengisi pendaftaran") },
+              { icon: "✅", label: t("register:process.step2", "Diverifikasi oleh tim") },
+              { icon: "🖥️", label: t("register:process.step3", "Jadwal demo marbot.app") },
+              { icon: "🕌", label: t("register:process.step4", "Migrasi data masjid") },
+              { icon: "👥", label: t("register:process.step5", "Daftarkan DKM inti") },
+            ].map((step, i) => (
+              <div
+                key={i}
+                className="relative z-10 flex sm:flex-col items-center gap-3 sm:gap-2 sm:flex-1 sm:text-center py-3 sm:py-0"
+              >
+                {/* mobile vertical connector */}
+                {i < 4 && (
+                  <div className="absolute left-6 top-full h-4 w-px bg-brand-100 sm:hidden" />
+                )}
+                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-brand-50 border-2 border-brand-100 text-xl shadow-sm">
+                  {step.icon}
+                </div>
+                <div className="flex flex-col sm:items-center">
+                  <span className="text-xs font-semibold text-brand-600 sm:mb-0.5">
+                    {i + 1}
+                  </span>
+                  <span className="text-sm font-medium text-ink-700 leading-tight">
+                    {step.label}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {error && (
           <div className="mt-6 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-700">
             {error}
