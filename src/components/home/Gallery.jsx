@@ -1,13 +1,21 @@
 import { useState, useCallback } from "react";
 import { useTranslation } from "react-i18next";
-import { Instagram, ExternalLink, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Instagram, ExternalLink, X, ChevronLeft, ChevronRight, Monitor, Smartphone } from "lucide-react";
 
-const SCREENSHOTS = [
+const WEB_SCREENSHOTS = [
   { src: "/app/web-ss-1.png" },
   { src: "/app/web-ss-2.png" },
   { src: "/app/web-ss-3.png" },
   { src: "/app/web-ss-4.png" },
   { src: "/app/web-ss-5-menu.png" },
+];
+
+const MOBILE_SCREENSHOTS = [
+  { src: "/app/4.jpeg" },
+  { src: "/app/6.jpeg" },
+  { src: "/app/3.jpeg" },
+  { src: "/app/5.jpeg" },
+  { src: "/app/2.jpeg" },
 ];
 
 function Lightbox({ images, labels, current, onClose, onPrev, onNext }) {
@@ -20,7 +28,6 @@ function Lightbox({ images, labels, current, onClose, onPrev, onNext }) {
         className="relative mx-4 flex max-h-[90vh] max-w-5xl flex-col items-center"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Close */}
         <button
           onClick={onClose}
           className="absolute -top-12 right-0 rounded-full bg-white/10 p-2 text-white transition-colors hover:bg-white/20"
@@ -28,7 +35,6 @@ function Lightbox({ images, labels, current, onClose, onPrev, onNext }) {
           <X size={24} />
         </button>
 
-        {/* Image */}
         <img
           src={images[current]}
           alt={labels[current]}
@@ -36,7 +42,6 @@ function Lightbox({ images, labels, current, onClose, onPrev, onNext }) {
         />
         <p className="mt-3 text-sm font-medium text-white">{labels[current]}</p>
 
-        {/* Nav arrows */}
         {images.length > 1 && (
           <>
             <button
@@ -54,7 +59,6 @@ function Lightbox({ images, labels, current, onClose, onPrev, onNext }) {
           </>
         )}
 
-        {/* Dots */}
         <div className="mt-3 flex gap-1.5">
           {images.map((_, i) => (
             <span
@@ -70,10 +74,17 @@ function Lightbox({ images, labels, current, onClose, onPrev, onNext }) {
 
 export default function Gallery() {
   const { t } = useTranslation("home");
-  const items = t("gallery.items", { returnObjects: true });
+  const webItems = t("gallery.items", { returnObjects: true });
+  const mobileItems = t("gallery.mobileItems", { returnObjects: true });
+
+  const [tab, setTab] = useState("web");
   const [lightboxIdx, setLightboxIdx] = useState(-1);
 
-  const images = items.map((_, i) => SCREENSHOTS[i % SCREENSHOTS.length].src);
+  const isWeb = tab === "web";
+  const screenshots = isWeb ? WEB_SCREENSHOTS : MOBILE_SCREENSHOTS;
+  const items = isWeb ? webItems : mobileItems;
+
+  const images = items.map((_, i) => screenshots[i % screenshots.length].src);
   const labels = items.map((item) => item.label);
 
   const open = useCallback((i) => setLightboxIdx(i), []);
@@ -93,28 +104,55 @@ export default function Gallery() {
           <p className="mt-4 text-base text-ink-500">{t("gallery.subtitle")}</p>
         </div>
 
+        {/* Tab switcher */}
+        <div className="mt-10 flex justify-center">
+          <div className="inline-flex rounded-xl border border-gray-200 bg-gray-50 p-1 gap-1">
+            <button
+              onClick={() => { setTab("web"); setLightboxIdx(-1); }}
+              className={`flex items-center gap-2 rounded-lg px-5 py-2 text-sm font-semibold transition-all ${
+                isWeb
+                  ? "bg-white text-brand-600 shadow-sm"
+                  : "text-ink-500 hover:text-ink-700"
+              }`}
+            >
+              <Monitor size={15} />
+              {t("gallery.tabWeb")}
+            </button>
+            <button
+              onClick={() => { setTab("mobile"); setLightboxIdx(-1); }}
+              className={`flex items-center gap-2 rounded-lg px-5 py-2 text-sm font-semibold transition-all ${
+                !isWeb
+                  ? "bg-white text-brand-600 shadow-sm"
+                  : "text-ink-500 hover:text-ink-700"
+              }`}
+            >
+              <Smartphone size={15} />
+              {t("gallery.tabMobile")}
+            </button>
+          </div>
+        </div>
+
         {/* Grid */}
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className={`mt-10 grid gap-5 ${isWeb ? "sm:grid-cols-2 lg:grid-cols-3" : "grid-cols-2 sm:grid-cols-3 lg:grid-cols-5"}`}>
           {items.map((item, i) => {
-            const ss = SCREENSHOTS[i % SCREENSHOTS.length];
+            const ss = screenshots[i % screenshots.length];
             return (
               <button
                 key={item.label}
                 onClick={() => open(i)}
-                className="group relative overflow-hidden rounded-2xl bg-gray-100 aspect-[4/3] shadow-md transition-shadow hover:shadow-lg cursor-pointer text-left"
+                className={`group relative overflow-hidden rounded-2xl bg-gray-100 shadow-md transition-shadow hover:shadow-lg cursor-pointer text-left ${
+                  isWeb ? "aspect-[4/3]" : "aspect-[9/19.5]"
+                }`}
               >
-                {/* Screenshot image */}
                 <img
                   src={ss.src}
                   alt={item.label}
                   className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
-
-                {/* Label overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4">
-                  <p className="font-display text-sm font-bold text-white">{item.label}</p>
-                  <p className="text-xs text-white/80">{item.desc}</p>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-3">
+                  <p className="font-display text-xs font-bold text-white leading-tight">{item.label}</p>
+                  <p className={`text-white/80 leading-tight ${isWeb ? "text-xs mt-0.5" : "text-[10px] mt-0.5 hidden sm:block"}`}>{item.desc}</p>
                 </div>
               </button>
             );
@@ -159,7 +197,6 @@ export default function Gallery() {
         </div>
       </div>
 
-      {/* Lightbox popup */}
       {lightboxIdx >= 0 && (
         <Lightbox
           images={images}

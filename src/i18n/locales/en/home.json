@@ -79,12 +79,21 @@
     "badge": "Documentation",
     "title": "App Screenshot Gallery",
     "subtitle": "See how marbot.app helps mosque administrators manage their work easily and neatly.",
+    "tabWeb": "Web Dashboard",
+    "tabMobile": "Mobile App",
     "items": [
       { "label": "Financial Dashboard", "desc": "Cash summary, income & expenses overview" },
       { "label": "Congregation Management", "desc": "Complete data of all congregation members" },
       { "label": "Transactions & Records", "desc": "Daily income and expense tracking" },
       { "label": "Mosque Settings", "desc": "Mosque profile, bank accounts, and staff" },
       { "label": "Mobile Navigation", "desc": "Access all features from your smartphone" }
+    ],
+    "mobileItems": [
+      { "label": "Home Dashboard", "desc": "Finance overview, recent members & upcoming events" },
+      { "label": "Congregation List", "desc": "Browse and search all mosque members" },
+      { "label": "Finance & Transactions", "desc": "Track income and expenses with date filters" },
+      { "label": "Events Management", "desc": "Create and manage mosque activities" },
+      { "label": "More Features", "desc": "ZISWAF, Qurban, Inventory, Tasks & Settings" }
     ],
     "followInstagram": "Follow @marbot.app on Instagram",
     "tryDashboard": "Try Dashboard Now",
