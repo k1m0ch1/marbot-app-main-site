@@ -11,11 +11,11 @@ const WEB_SCREENSHOTS = [
 ];
 
 const MOBILE_SCREENSHOTS = [
-  { src: "/app/4.jpeg" },
-  { src: "/app/6.jpeg" },
-  { src: "/app/3.jpeg" },
-  { src: "/app/5.jpeg" },
-  { src: "/app/2.jpeg" },
+  { src: "/app/4.jpeg?v=2" },
+  { src: "/app/6.jpeg?v=2" },
+  { src: "/app/3.jpeg?v=2" },
+  { src: "/app/5.jpeg?v=2" },
+  { src: "/app/2.jpeg?v=2" },
 ];
 
 function Lightbox({ images, labels, current, onClose, onPrev, onNext }) {
