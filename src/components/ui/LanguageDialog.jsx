@@ -1,20 +1,22 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-const STORAGE_KEY = "i18nextLng";
+// Separate from i18nextLng — that key is written by i18next auto-detector on every load
+// even when the user has never explicitly picked a language.
+const CHOSEN_KEY = "marbot_lang_chosen";
 
 export default function LanguageDialog() {
   const { i18n } = useTranslation();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const chosen = localStorage.getItem(STORAGE_KEY);
-    if (!chosen) {
+    if (!localStorage.getItem(CHOSEN_KEY)) {
       setVisible(true);
     }
   }, []);
 
   function choose(lang) {
+    localStorage.setItem(CHOSEN_KEY, "1");
     i18n.changeLanguage(lang);
     setVisible(false);
   }
